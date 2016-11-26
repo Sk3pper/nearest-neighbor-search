@@ -18,6 +18,8 @@ def shingling(document, k, i, print_= None):
     hash_fun = hashFamily(i)
 
     for s in shingles:
+        if print_:
+            print str(hash_fun(s))
         hash_shingles.append(hash_fun(s))
 
     if print_:
@@ -28,4 +30,4 @@ def shingling(document, k, i, print_= None):
 
 
 if __name__ == '__main__':
-    shingling("ciao come va??", 4, 8)
+    shingling("ciao", 4, 8, True)
