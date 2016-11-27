@@ -18,7 +18,6 @@ def compare_methods(collection, debug=None):
         print "numDocs: " + str(numDocs)
 
     # calculate two methods
-
     print "\nCalculating estJSim..."
     estJSim = compareMinHash(MinHash(collection, True))
 
@@ -31,6 +30,7 @@ def compare_methods(collection, debug=None):
     print "                   Est. J   Act. J"
 
     # For each of the document pairs...
+    count = 0
     for i in range(0, numDocs):
         for j in range(i + 1, numDocs):
             # Retrieve the estimated similarity value for this pair.
@@ -41,7 +41,9 @@ def compare_methods(collection, debug=None):
             if estJ > THRESHOLD:
                 # Print out the match and similarity values with pretty spacing.
                 print "  %5s --> %5s   %.2f     %.2f" % (i, j, estJ, J)
+                count = count +1
 
+    print 'document pairs founded: ' + str(count)
 
 if __name__ == '__main__':
     # OSS: la collection deve essere nel formato collection[docID] = documento
@@ -52,7 +54,7 @@ if __name__ == '__main__':
 
     # You can run this code for different portions of the dataset.
     # It ships with data set sizes 100, 1000, 2500, and 10000.
-    numDocs = 1000
+    numDocs = 10000
     dataFile = "/data/articles_" + str(numDocs) + ".train"
     dir = '/Users/andrea/Documents/workspace/nearest-neighbor-search/'
     # Open the data file.

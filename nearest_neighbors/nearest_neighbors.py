@@ -45,11 +45,12 @@ def J_nearest_neighbors(collection, debug=None):
 
         # Retrieve the set of shingles for document i.
         s1 = shingles_collection[i]
+        # print 's1: ' + str(len(s1))
 
         for j in range(i + 1, numDocs):
             # Retrieve the set of shingles for document j.
             s2 = shingles_collection[j]
-
+            # print 's2: ' + str(len(s1))+'\n'
             # Calculate and store the actual Jaccard similarity.
             JSim[getTriangleIndex(i, j, numDocs)] = (float(len(s1.intersection(s2))) / float(len(s1.union(s2))))
 

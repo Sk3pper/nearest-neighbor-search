@@ -105,9 +105,14 @@ def random_hash(debug=None):
 # ritorna un dizionario di liste, dove ogni lista e' un documento rappresentato con le shingle
 def getCollectionShingles(collection, debug=None):
     shingles_collection = {}
+    totalShingles = 0
     if debug:
         print '#number of documents: '+ str(len(collection.keys()))
     for key in collection.keys():
-        shingles_collection[key] = (shingling(collection[key], K, I))
+        s = shingling(collection[key], K, I)
+        totalShingles = totalShingles + len(s)
+
+        shingles_collection[key] = s
+    print '\nAverage shingles per doc: %.2f' % (totalShingles / len(collection))
 
     return shingles_collection

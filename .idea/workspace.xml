@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b2c40b6-6988-4a00-b9e7-65a1aa4f14ce" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/articles_100.truth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/articles_1000.truth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/articles_10000.truth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/articles_2500.truth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/createDataSubset.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MinHash/runMinHashExample.py" afterPath="$PROJECT_DIR$/../MinHash/runMinHashExample.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compare/compare_methods.py" afterPath="$PROJECT_DIR$/compare/compare_methods.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/locally_sensitive_hashing/lsh.py" afterPath="$PROJECT_DIR$/locally_sensitive_hashing/lsh.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minhash_signature/minhash_signature.py" afterPath="$PROJECT_DIR$/minhash_signature/minhash_signature.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nearest_neighbors/nearest_neighbors.py" afterPath="$PROJECT_DIR$/nearest_neighbors/nearest_neighbors.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shingling/shingling.py" afterPath="$PROJECT_DIR$/shingling/shingling.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/hashFamily.py" afterPath="$PROJECT_DIR$/utils/hashFamily.py" />
     </list>
     <ignored path="nearest-neighbor-search.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,9 +19,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/nearest-neighbor-search$compare_methods.coverage" NAME="compare_methods Coverage Results" MODIFIED="1480259090361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/compare" />
+    <SUITE FILE_PATH="coverage/nearest-neighbor-search$minhash_signature.coverage" NAME="minhash_signature Coverage Results" MODIFIED="1480260321294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minhash_signature" />
+    <SUITE FILE_PATH="coverage/nearest-neighbor-search$compare_methods.coverage" NAME="compare_methods Coverage Results" MODIFIED="1480260739152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/compare" />
     <SUITE FILE_PATH="coverage/nearest-neighbor-search$hashFamily.coverage" NAME="hashFamily Coverage Results" MODIFIED="1480081856012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/nearest-neighbor-search$runMinHashExample.coverage" NAME="runMinHashExample Coverage Results" MODIFIED="1480258245706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../MinHash" />
+    <SUITE FILE_PATH="coverage/nearest-neighbor-search$runMinHashExample.coverage" NAME="runMinHashExample Coverage Results" MODIFIED="1480260316383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../MinHash" />
     <SUITE FILE_PATH="coverage/nearest-neighbor-search$minhash.coverage" NAME="minhash Coverage Results" MODIFIED="1480181345686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minwise_hashing" />
     <SUITE FILE_PATH="coverage/nearest-neighbor-search$shingling.coverage" NAME="shingling Coverage Results" MODIFIED="1480175081835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shingling" />
   </component>
@@ -42,40 +35,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="compare_methods.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/compare/compare_methods.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding>
-                <element signature="e#211#222#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="runMinHashExample.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="runMinHashExample.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../MinHash/runMinHashExample.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-664">
-              <caret line="134" column="42" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="42" />
+            <state relative-caret-position="-735">
+              <caret line="123" column="42" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="68" />
               <folding>
                 <element signature="e#1810#1841#0" expanded="true" />
                 <element signature="e#6435#7001#0" expanded="false" />
-                <element signature="e#9411#9811#0" expanded="false" />
-                <element signature="e#10476#11500#0" expanded="false" />
+                <element signature="e#9473#9873#0" expanded="false" />
+                <element signature="e#10538#11562#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nearest_neighbors.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nearest_neighbors/nearest_neighbors.py">
+      <file leaf-file-name="compare_methods.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/compare/compare_methods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="29" column="47" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="47" />
+            <state relative-caret-position="425">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
-                <element signature="e#477#488#0" expanded="true" />
+                <element signature="e#211#222#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/minhash_signature/minhash_signature.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="705">
-              <caret line="110" column="45" selection-start-line="110" selection-start-column="36" selection-end-line="110" selection-end-column="45" />
+              <caret line="115" column="4" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="4" />
               <folding>
                 <element signature="e#550#563#0" expanded="true" />
               </folding>
@@ -105,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shingling.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="shingling.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shingling/shingling.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="e#196#211#0" expanded="true" />
               </folding>
@@ -127,7 +108,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../MinHash" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -141,11 +122,11 @@
         <option value="$PROJECT_DIR$/compare/compare_method.py" />
         <option value="$PROJECT_DIR$/utils/hashFamily.py" />
         <option value="$PROJECT_DIR$/locally_sensitive_hashing/lsh.py" />
-        <option value="$PROJECT_DIR$/minhash_signature/minhash_signature.py" />
-        <option value="$PROJECT_DIR$/compare/compare_methods.py" />
+        <option value="$PROJECT_DIR$/shingling/shingling.py" />
         <option value="$PROJECT_DIR$/../MinHash/runMinHashExample.py" />
         <option value="$PROJECT_DIR$/nearest_neighbors/nearest_neighbors.py" />
-        <option value="$PROJECT_DIR$/shingling/shingling.py" />
+        <option value="$PROJECT_DIR$/minhash_signature/minhash_signature.py" />
+        <option value="$PROJECT_DIR$/compare/compare_methods.py" />
       </list>
     </option>
   </component>
@@ -213,31 +194,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MinHash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -252,76 +209,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="shingling" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest_neighbors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="minhash_signature" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="locally_sensitive_hashing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="compare" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -359,24 +246,6 @@
       <module name="nearest-neighbor-search" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shingling/shingling.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="hashFamily" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="nearest-neighbor-search" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/hashFamily.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -431,6 +300,24 @@
       <module name="nearest-neighbor-search" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/compare/compare_methods.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="minhash_signature" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/minhash_signature" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nearest-neighbor-search" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/minhash_signature/minhash_signature.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -645,18 +532,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.shingling" />
-      <item index="1" class="java.lang.String" itemvalue="Python.hashFamily" />
-      <item index="2" class="java.lang.String" itemvalue="Python.runMinHashExample" />
-      <item index="3" class="java.lang.String" itemvalue="Python.minhash" />
-      <item index="4" class="java.lang.String" itemvalue="Python.compare_methods" />
+      <item index="1" class="java.lang.String" itemvalue="Python.runMinHashExample" />
+      <item index="2" class="java.lang.String" itemvalue="Python.minhash" />
+      <item index="3" class="java.lang.String" itemvalue="Python.compare_methods" />
+      <item index="4" class="java.lang.String" itemvalue="Python.minhash_signature" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.compare_methods" />
-        <item index="1" class="java.lang.String" itemvalue="Python.runMinHashExample" />
-        <item index="2" class="java.lang.String" itemvalue="Python.minhash" />
-        <item index="3" class="java.lang.String" itemvalue="Python.shingling" />
-        <item index="4" class="java.lang.String" itemvalue="Python.hashFamily" />
+        <item index="1" class="java.lang.String" itemvalue="Python.minhash_signature" />
+        <item index="2" class="java.lang.String" itemvalue="Python.runMinHashExample" />
+        <item index="3" class="java.lang.String" itemvalue="Python.minhash" />
+        <item index="4" class="java.lang.String" itemvalue="Python.shingling" />
       </list>
     </recent_temporary>
   </component>
@@ -686,14 +573,14 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22569445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23247497" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6694021" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282532" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37983587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6879518" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -751,8 +638,8 @@
           <folding>
             <element signature="e#1810#1841#0" expanded="true" />
             <element signature="e#6435#7001#0" expanded="false" />
-            <element signature="e#9411#9811#0" expanded="false" />
-            <element signature="e#10476#11500#0" expanded="false" />
+            <element signature="e#9473#9873#0" expanded="false" />
+            <element signature="e#10538#11562#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -896,14 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/hashFamily.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/locally_sensitive_hashing/lsh.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -914,39 +793,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/minhash_signature/minhash_signature.py">
+    <entry file="file://$PROJECT_DIR$/utils/hashFamily.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="110" column="45" selection-start-line="110" selection-start-column="36" selection-end-line="110" selection-end-column="45" />
-          <folding>
-            <element signature="e#550#563#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shingling/shingling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#196#211#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compare/compare_methods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="e#211#222#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nearest_neighbors/nearest_neighbors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="435">
           <caret line="29" column="47" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="47" />
           <folding>
             <element signature="e#477#488#0" expanded="true" />
@@ -956,13 +813,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../MinHash/runMinHashExample.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-664">
-          <caret line="134" column="42" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="42" />
+        <state relative-caret-position="-735">
+          <caret line="123" column="42" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="68" />
           <folding>
             <element signature="e#1810#1841#0" expanded="true" />
             <element signature="e#6435#7001#0" expanded="false" />
-            <element signature="e#9411#9811#0" expanded="false" />
-            <element signature="e#10476#11500#0" expanded="false" />
+            <element signature="e#9473#9873#0" expanded="false" />
+            <element signature="e#10538#11562#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/minhash_signature/minhash_signature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="115" column="4" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="4" />
+          <folding>
+            <element signature="e#550#563#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compare/compare_methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#211#222#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shingling/shingling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#196#211#0" expanded="true" />
           </folding>
         </state>
       </provider>
