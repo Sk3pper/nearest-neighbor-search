@@ -49,7 +49,7 @@ def compareMinHash(signatures, debug=None):
                 count = count + (signature1[k] == signature2[k])
 
             # Record the percentage of positions which matched.
-            estJSim[getTriangleIndex(i, j)] = (count / NUMHASHES)
+            estJSim[getTriangleIndex(i, j, numDocs)] = (float(count) / float(NUMHASHES))
 
     elapsed = (time.time() - t0)
     print "\nComparing MinHash signatures took %.2fsec" % elapsed

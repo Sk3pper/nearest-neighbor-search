@@ -62,10 +62,11 @@ def MinHash(collection, debug=None):
             # For each shingle in the document...
             for shingle in shingles:
                 if i == 0:
-                    minHashCode = hash(shingle)
+                    minHashCode = hash(str(shingle))
+                    value = minHashCode
                     i += 1
                 else:
-                    value = hash(shingle)
+                    value = hash(str(shingle))
 
                 if value < minHashCode and i != 0:
                     minHashCode = value

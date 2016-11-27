@@ -45,15 +45,21 @@ def J_nearest_neighbors(collection, debug=None):
               print "  (" + str(i) + " / " + str(numDocs) + ")"
 
         # Retrieve the set of shingles for document i.
-        s1 = shingles_collection[i]
+        s1 = set(shingles_collection[i])
 
         for j in range(i + 1, numDocs):
             # Retrieve the set of shingles for document j.
-            s2 = shingles_collection[j]
+            s2 = set(shingles_collection[j])
 
             # Calculate and store the actual Jaccard similarity.
-            JSim[getTriangleIndex(i, j)] = (len(s1.intersection(s2)) / len(s1.union(s2)))
+            JSim[getTriangleIndex(i, j, numDocs)] = (float(len(s1.intersection(s2))) / float(len(s1.union(s2))))
 
+            '''if debug:
+                if len(s1.intersection(s2)) / float(len(s1.union(s2))) > 0:
+                    print 'len(s1.intersection(s2)): '+str(len(s1.intersection(s2)))+' len(s1.union(s2)): '+str(len(s1.union(s2)))+\
+                      ' JSim: '+str((len(s1.intersection(s2)) / len(s1.union(s2))))
+
+                    print str((len(s1.intersection(s2)) / float(len(s1.union(s2)))))'''
             # Calculate the elapsed time (in seconds)
     elapsed = (time.time() - t0)
 

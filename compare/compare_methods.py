@@ -9,7 +9,7 @@ from minhash_signature.minhash_signature import MinHash
 from nearest_neighbors.nearest_neighbors import J_nearest_neighbors
 from utils.TriangleIndex import getTriangleIndex
 
-THRESHOLD = 0.8
+THRESHOLD = 0.5
 
 def compare_methods(collection, debug=None):
 
@@ -30,9 +30,10 @@ def compare_methods(collection, debug=None):
     for i in range(0, numDocs):
         for j in range(i + 1, numDocs):
             # Retrieve the estimated similarity value for this pair.
-            estJ = estJSim[getTriangleIndex(i, j)]
-            J = JSim[getTriangleIndex(i, j)]
+            estJ = estJSim[getTriangleIndex(i, j, numDocs)]
+            J = JSim[getTriangleIndex(i, j, numDocs)]
             # If the similarity is above the threshold...
+
             if estJ > THRESHOLD:
                 # Print out the match and similarity values with pretty spacing.
                 print "  %5s --> %5s   %.2f     %.2f" % (i, j, estJ, J)
