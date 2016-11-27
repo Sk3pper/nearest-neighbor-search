@@ -49,6 +49,9 @@ def MinHash(collection, debug=None):
 
     # oss: collection ed shingles_collection ed signatures con la stessa chiave si riferisce allo stesso oggetto
     for docID in collection.keys():
+        # Print progress every 100 documents.
+        if (docID % 100) == 0:
+            print "  (" + str(docID) + " / " + str(len(collection)) + ")"
         # Get the shingle set of shingles for this document.
         shingles = shingles_collection[docID]
 

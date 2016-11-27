@@ -40,16 +40,15 @@ def J_nearest_neighbors(collection, debug=None):
     for i in range(0, numDocs):
 
         # Print progress every 100 documents.
-        if debug:
-            if (i % 100) == 0:
-              print "  (" + str(i) + " / " + str(numDocs) + ")"
+        if (i % 100) == 0:
+            print "  (" + str(i) + " / " + str(numDocs) + ")"
 
         # Retrieve the set of shingles for document i.
-        s1 = set(shingles_collection[i])
+        s1 = shingles_collection[i]
 
         for j in range(i + 1, numDocs):
             # Retrieve the set of shingles for document j.
-            s2 = set(shingles_collection[j])
+            s2 = shingles_collection[j]
 
             # Calculate and store the actual Jaccard similarity.
             JSim[getTriangleIndex(i, j, numDocs)] = (float(len(s1.intersection(s2))) / float(len(s1.union(s2))))

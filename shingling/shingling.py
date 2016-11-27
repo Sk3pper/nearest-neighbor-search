@@ -9,12 +9,13 @@ def shingling(document, k, i, print_= None):
 
     # prima facciamo le "tegole"
     shingles = [document[i:i + k] for i in range(len(document) - k + 1)]
+    shingles = set(shingles)
 
     if print_:
         print shingles
 
     # poi per ogni tegola faciamo l'hash
-    hash_shingles = []
+    hash_shingles = set()
 
     # load hash function
     hash_fun = hashFamily(i)
@@ -23,15 +24,13 @@ def shingling(document, k, i, print_= None):
         if print_:
             print str(hash_fun(s))
         # hash_shingles.append(hash_fun(s))
-        # print binascii.crc32(s) & 0xffffffff
-        hash_shingles.append(binascii.crc32(s) & 0xffffffff)
+        # print hash_fun(s)
+        hash_shingles.add(binascii.crc32(s) & 0xffffffff)
 
     if print_:
         print hash_shingles
 
     return hash_shingles
-
-
 
 if __name__ == '__main__':
     shingling("ciao", 4, 8, True)

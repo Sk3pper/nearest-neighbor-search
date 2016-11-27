@@ -9,7 +9,7 @@ from minhash_signature.minhash_signature import MinHash
 from nearest_neighbors.nearest_neighbors import J_nearest_neighbors
 from utils.TriangleIndex import getTriangleIndex
 
-THRESHOLD = 0.5
+THRESHOLD = 0.8
 
 def compare_methods(collection, debug=None):
 
@@ -18,7 +18,11 @@ def compare_methods(collection, debug=None):
         print "numDocs: " + str(numDocs)
 
     # calculate two methods
+
+    print "\nCalculating estJSim..."
     estJSim = compareMinHash(MinHash(collection, True))
+
+    print "\nCalculating JSim..."
     JSim = J_nearest_neighbors(collection, True)
 
     print "\nList of Document Pairs with J(d1,d2) more than", THRESHOLD
@@ -48,7 +52,7 @@ if __name__ == '__main__':
 
     # You can run this code for different portions of the dataset.
     # It ships with data set sizes 100, 1000, 2500, and 10000.
-    numDocs = 100
+    numDocs = 1000
     dataFile = "/data/articles_" + str(numDocs) + ".train"
     dir = '/Users/andrea/Documents/workspace/nearest-neighbor-search/'
     # Open the data file.
