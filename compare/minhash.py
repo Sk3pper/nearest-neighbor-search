@@ -164,9 +164,12 @@ if __name__ == '__main__':
     print '\nComparing all signatures...'
     # Time this step.
     t0 = time.time()
-    compareMinHash(collection, shingles_collection, signatures)
+    ret = compareMinHash(collection, shingles_collection, signatures)
     # Calculate the elapsed time (in seconds)
     elapsed = (time.time() - t0)
     print "\nComparing MinHash signatures took %.2fsec" % elapsed
+
+
+    print ret
 
 

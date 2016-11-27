@@ -31,3 +31,7 @@ def shingling(document, k, i, print_= None):
 
 if __name__ == '__main__':
     shingling("ciao", 4, 8, True)
+
+
+
+# OSS: possiamo fare un set di hash_shingles cosi non abbiamo doppionio!!!
