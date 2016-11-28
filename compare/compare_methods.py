@@ -6,7 +6,7 @@ import time
 import os
 from locally_sensitive_hashing.lsh import compareMinHash
 from minhash_signature.minhash_signature import MinHash
-from nearest_neighbors.nearest_neighbors import J_nearest_neighbors
+from nearest_neighbors.nearest_neighbors_multith import J_nearest_neighbors
 from utils.TriangleIndex import getTriangleIndex
 
 THRESHOLD = 0.8
@@ -18,11 +18,12 @@ def compare_methods(collection, debug=None):
         print "numDocs: " + str(numDocs)
 
     # calculate two methods
-    print "\nCalculating estJSim..."
-    estJSim = compareMinHash(MinHash(collection, True))
 
     print "\nCalculating JSim..."
     JSim = J_nearest_neighbors(collection, True)
+
+    print "\nCalculating estJSim..."
+    estJSim = compareMinHash(MinHash(collection, True))
 
     print "\nList of Document Pairs with J(d1,d2) more than", THRESHOLD
     print "Values shown are the estimated Jaccard similarity and the actual"
