@@ -15,7 +15,7 @@ import threading
 
 
 shi = []
-JSim = []
+JSim2 = []
 LOAD_TH = 10 # quanti documenti per ogni thread
 n_docs = 0
 
@@ -42,20 +42,22 @@ def worker(start, end):
             print "  (" + str(i) + " / " + str(n_docs) + ")"
 
         # Retrieve the set of shingles for document i.
-        # s1 = shi[i]
+        s1 = shi[i]
         # print 's1: ' + str(len(s1))
 
         for j in range(i + 1, n_docs):
             # Retrieve the set of shingles for document j.
-            # s2 = shi[j]
+            s2 = shi[j]
             # print 's2: ' + str(len(s1))+'\n'
             # Calculate and store the actual Jaccard similarity.
-            # JSim[getTriangleIndex(i, j, numDocs)] = (float(len(s1.intersection(s2))) / float(len(s1.union(s2))))
-
-            print 'i: '+str(i)+' j: '+str(j)
+            JSim2[getTriangleIndex(i, j, n_docs)] = (float(len(s1.intersection(s2))) / float(len(s1.union(s2))))
 
 
 def J_nearest_neighbors(collection, debug=None):
+    global n_docs
+    global shi
+    global JSim2
+
     numDocs = len(collection)
     n_docs = numDocs
     if debug:
@@ -66,7 +68,7 @@ def J_nearest_neighbors(collection, debug=None):
     # Initialize empty list to store the similarity values.
     # 'JSim' will be for the actual Jaccard Similarity values.
     JSim = [0 for x in range(numElems)]
-
+    JSim2 = JSim
     print "Shingling articles..."
     t0 = time.time()
     shingles_collection = getCollectionShingles(collection)
@@ -85,7 +87,7 @@ def J_nearest_neighbors(collection, debug=None):
     threads = []
 
     for i in range(0, n_th):
-        # print str(i * LOAD_TH) + '-' + str((i + 1) * LOAD_TH - 1)
+        print str(i * LOAD_TH) + '-' + str((i + 1) * LOAD_TH - 1)
         # Create new threads
         print 'start thread',i
         th = myThread(str(i), i * LOAD_TH, (i + 1) * LOAD_TH - 1)

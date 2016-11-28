@@ -55,7 +55,7 @@ if __name__ == '__main__':
 
     # You can run this code for different portions of the dataset.
     # It ships with data set sizes 100, 1000, 2500, and 10000.
-    numDocs = 10000
+    numDocs = 100
     dataFile = "/data/articles_" + str(numDocs) + ".train"
     dir = '/Users/andrea/Documents/workspace/nearest-neighbor-search/'
     # Open the data file.
