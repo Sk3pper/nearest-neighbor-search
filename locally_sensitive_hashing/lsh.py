@@ -4,12 +4,13 @@
 import time
 
 from utils.TriangleIndex import getTriangleIndex
-
+import math
 
 # This is the number of components in the resulting MinHash signatures.
 # Correspondingly, it is also the number of random hash functions that
 # we will need in order to calculate the MinHash.
-NUMHASHES = 10
+NUMHASHES = 7
+
 
 def compareMinHash(signatures, debug=None):
     numDocs = len(signatures)
@@ -45,11 +46,12 @@ def compareMinHash(signatures, debug=None):
 
             count = 0
             # Count the number of positions in the minhash signature which are equal.
-            for k in range(0, NUMHASHES):
+            n = int(math.log((len(signatures)), 2))
+            for k in range(0, n):
                 count = count + (signature1[k] == signature2[k])
 
             # Record the percentage of positions which matched.
-            estJSim[getTriangleIndex(i, j, numDocs)] = (float(count) / float(NUMHASHES))
+            estJSim[getTriangleIndex(i, j, numDocs)] = (float(count) / float(n))
 
             # if (float(count) / float(NUMHASHES)) > 0:
                 # print str(float(count) / float(NUMHASHES))

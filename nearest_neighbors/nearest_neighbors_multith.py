@@ -16,17 +16,16 @@ import copy
 
 shi = []
 JSim2 = []
-LOAD_TH = 100 # quanti documenti per ogni thread
+LOAD_TH = 10 # quanti documenti per ogni thread
 n_docs = 0
 threadLock = None
 
 class myThread(threading.Thread):
-    def __init__(self, threadID, start_index, end, shingles_collection):
+    def __init__(self, threadID, start_index, end):
         threading.Thread.__init__(self)
         self.threadID = threadID
         self.start_index = start_index
         self.end = end
-        self.shingles_collection = shingles_collection
 
     def run(self):
         # print "Starting " + self.name
@@ -44,13 +43,13 @@ class myThread(threading.Thread):
                 print "  (" + str(i) + " / " + str(n_docs) + ")"'''
 
             # Retrieve the set of shingles for document i.
-            s1 = self.shingles_collection[i]
+            s1 = shi[i]
             # print 's1: ' + str(len(s1))
             # print str(start)+'-'+str(end)+'  '+str(self.threadID)+' docID: '+ str(i)
 
             for j in range(i + 1, n_docs):
                 # Retrieve the set of shingles for document j.
-                s2 = self.shingles_collection[j]
+                s2 = shi[j]
                 # print 's2: ' + str(len(s1))+'\n'
                 # Calculate and store the actual Jaccard similarity.
                 res = (float(len(s1.intersection(s2))) / float(len(s1.union(s2))))
@@ -101,7 +100,7 @@ def J_nearest_neighbors(collection, debug=None):
         print 'start thread',i
 
         #x = copy.deepcopy(y)    # crea una copia profonda di y
-        th = myThread(str(i), i * LOAD_TH, (i + 1) * LOAD_TH, copy.deepcopy(shingles_collection) )
+        th = myThread(str(i), i * LOAD_TH, (i + 1) * LOAD_TH)
         threads.insert(i, th)
 
     for t in threads:

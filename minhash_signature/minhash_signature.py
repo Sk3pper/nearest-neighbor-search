@@ -15,6 +15,7 @@ import time
 
 from shingling.shingling import shingling
 from utils.hashFamily import hashFamily
+import math
 
 # range of random.randint(A, B)
 A = 0
@@ -28,12 +29,12 @@ K = 10
 I = 2
 
 # number of random hash functions apply to perform signature
-NUMHASHES = 10
+
+
 
 # data la collezione, la collezione divisa per shingles, e le random_hash
 # ritorna la collezione di signature
 def MinHash(collection, debug=None):
-
     print "Shingling articles..."
     t0 = time.time()
     shingles_collection = getCollectionShingles(collection)
@@ -42,7 +43,9 @@ def MinHash(collection, debug=None):
 
     t0 = time.time()
     print '\nGenerating random hash functions...'
-    hash_funcs = random_hash()
+    n = int(math.log((len(collection)),2))
+    print '#hash: '+str(n)
+    hash_funcs = random_hash(n)
 
     print '\nGenerating MinHash signatures for all documents...'
     signatures = {}
@@ -87,10 +90,10 @@ def MinHash(collection, debug=None):
 
 
 # returns a list of hash function pointer
-def random_hash(debug=None):
+def random_hash(num_hashes, debug=None):
     # random.randint(a, b) Return a random integer N such that a <= N <= b. Alias for randrange(a, b+1)
     hash_funcs = []
-    for j in range(NUMHASHES):
+    for j in range(num_hashes):
         i = random.randint(A, B)
         if debug:
             print "i: " + str(i)
