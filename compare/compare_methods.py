@@ -6,7 +6,7 @@ import time
 import os
 from locally_sensitive_hashing.lsh import compareMinHash
 from minhash_signature.minhash_signature import MinHash
-from nearest_neighbors.nearest_neighbors_multith import J_nearest_neighbors
+from nearest_neighbors.nearest_neighbors_multith_thread_pool import J_nearest_neighbors
 from utils.TriangleIndex import getTriangleIndex
 
 THRESHOLD = 0.8
@@ -55,7 +55,7 @@ if __name__ == '__main__':
 
     # You can run this code for different portions of the dataset.
     # It ships with data set sizes 100, 1000, 2500, and 10000.
-    numDocs = 100
+    numDocs = 10000
     dataFile = "/data/articles_" + str(numDocs) + ".train"
     dir = '/Users/andrea/Documents/workspace/nearest-neighbor-search/'
     # Open the data file.
