@@ -145,12 +145,13 @@ if __name__ == '__main__':
     collection = {}
     for recipe in recipes:
         collection[i] = extract_string_recipe(recipe)
-        print i
-        i = i + 1
+        i += 1
 
-    min_coll = {}
+    print 'read '+str(len(collection))+' recipes from .json'
+    '''min_coll = {}
 
-    '''for i in range(0,1000):
+    for i in range(0,1000):
         min_coll[i] =  collection[i]'''
     print 'Compare two methods...'
+
     compare_methods(collection, True)
