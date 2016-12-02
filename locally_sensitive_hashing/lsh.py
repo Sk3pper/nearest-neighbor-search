@@ -9,7 +9,7 @@ import math
 # This is the number of components in the resulting MinHash signatures.
 # Correspondingly, it is also the number of random hash functions that
 # we will need in order to calculate the MinHash.
-NUMHASHES = 7
+from utils.log_calculate import log_dict
 
 
 def compareMinHash(signatures, debug=None):
@@ -30,6 +30,10 @@ def compareMinHash(signatures, debug=None):
 
     # siccome usiamo come docID degli interi sulla ns collection possiamo fare in questo modo per velocizzare:
     # For each of the test documents...
+
+    # Count the number of positions in the minhash signature which are equal.
+    n = log_dict(signatures)
+
     for i in range(0, numDocs):
         # Get the MinHash signature for document i.
         docID1 = i
@@ -45,8 +49,7 @@ def compareMinHash(signatures, debug=None):
             signature2 = signatures[docID2]
 
             count = 0
-            # Count the number of positions in the minhash signature which are equal.
-            n = int(math.log((len(signatures)), 2))
+
             for k in range(0, n):
                 count = count + (signature1[k] == signature2[k])
 

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../MinHash/.idea/MinHash.iml" filepath="$PROJECT_DIR$/../MinHash/.idea/MinHash.iml" />
+      <module fileurl="file://$USER_HOME$/Google Drive/Universita/Universita_2016-2017(V anno)/I semestre/1)Data Mining/Tutorials/Python_Script/.idea/Python_Script.iml" filepath="$USER_HOME$/Google Drive/Universita/Universita_2016-2017(V anno)/I semestre/1)Data Mining/Tutorials/Python_Script/.idea/Python_Script.iml" />
       <module fileurl="file://$PROJECT_DIR$/../bbc-recipes-search-engine/.idea/bbc-recipes-search-engine.iml" filepath="$PROJECT_DIR$/../bbc-recipes-search-engine/.idea/bbc-recipes-search-engine.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/nearest-neighbor-search.iml" filepath="$PROJECT_DIR$/.idea/nearest-neighbor-search.iml" />
     </modules>

@@ -18,6 +18,8 @@ from utils.hashFamily import hashFamily
 import math
 
 # range of random.randint(A, B)
+from utils.log_calculate import log_dict
+
 A = 0
 B = 10000
 
@@ -29,9 +31,6 @@ K = 10
 I = 2
 
 # number of random hash functions apply to perform signature
-
-
-
 # data la collezione, la collezione divisa per shingles, e le random_hash
 # ritorna la collezione di signature
 def MinHash(collection, debug=None):
@@ -43,8 +42,9 @@ def MinHash(collection, debug=None):
 
     t0 = time.time()
     print '\nGenerating random hash functions...'
-    n = int(math.log((len(collection)),2))
-    print '#hash: '+str(n)
+
+    # Count the number of positions in the minhash signature which are equal.
+    n = log_dict(collection)
     hash_funcs = random_hash(n)
 
     print '\nGenerating MinHash signatures for all documents...'
@@ -93,8 +93,7 @@ def MinHash(collection, debug=None):
 def random_hash(num_hashes, debug=None):
     # random.randint(a, b) Return a random integer N such that a <= N <= b. Alias for randrange(a, b+1)
     hash_funcs = []
-    for j in range(num_hashes):
-        i = random.randint(A, B)
+    for i in range(0, num_hashes):
         if debug:
             print "i: " + str(i)
         # load hash functions

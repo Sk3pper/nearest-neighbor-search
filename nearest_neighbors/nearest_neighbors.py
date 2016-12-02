@@ -24,6 +24,7 @@ def J_nearest_neighbors(collection, debug=None):
     # Initialize empty list to store the similarity values.
     # 'JSim' will be for the actual Jaccard Similarity values.
     JSim = [0 for x in range(numElems)]
+    Intersection_matrix = [0 for x in range(numElems)]
 
     print "Shingling articles..."
     t0 = time.time()
@@ -52,17 +53,15 @@ def J_nearest_neighbors(collection, debug=None):
             s2 = shingles_collection[j]
             # print 's2: ' + str(len(s1))+'\n'
             # Calculate and store the actual Jaccard similarity.
-            JSim[getTriangleIndex(i, j, numDocs)] = (float(len(s1.intersection(s2))) / float(len(s1.union(s2))))
-
-            '''if debug:
-                if len(s1.intersection(s2)) / float(len(s1.union(s2))) > 0:
-                    print 'len(s1.intersection(s2)): '+str(len(s1.intersection(s2)))+' len(s1.union(s2)): '+str(len(s1.union(s2)))+\
-                      ' JSim: '+str((len(s1.intersection(s2)) / len(s1.union(s2))))
-
-                    print str((len(s1.intersection(s2)) / float(len(s1.union(s2)))))'''
-            # Calculate the elapsed time (in seconds)
+            coordinate = getTriangleIndex(i, j, numDocs)
+            inter =  float(len(s1.intersection(s2)))
+            JSim[coordinate] = (inter) / float(len(s1.union(s2)))
+            Intersection_matrix[coordinate] = inter
+    # Calculate the elapsed time (in seconds)
     elapsed = (time.time() - t0)
 
     print "\nCalculating all Jaccard Similarities took %.2fsec" % elapsed
-
-    return JSim
+    result = []
+    result.append(JSim)
+    result.append(Intersection_matrix)
+    return result
