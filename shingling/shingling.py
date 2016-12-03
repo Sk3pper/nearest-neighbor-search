@@ -25,6 +25,7 @@ def shingling(document, k, i, print_= None):
             print str(hash_fun(s))
         # hash_shingles.append(hash_fun(s))
         # print hash_fun(s)
+        # print binascii.crc32(s) & 0xffffffff
         hash_shingles.add(binascii.crc32(s) & 0xffffffff)
 
     if print_:

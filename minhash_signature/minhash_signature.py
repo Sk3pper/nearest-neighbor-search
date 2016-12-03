@@ -93,7 +93,9 @@ def MinHash(collection, debug=None):
 def random_hash(num_hashes, debug=None):
     # random.randint(a, b) Return a random integer N such that a <= N <= b. Alias for randrange(a, b+1)
     hash_funcs = []
-    for i in range(0, num_hashes):
+    for j in range(0, num_hashes):
+        i = random.randint(A, B)
+        print i
         if debug:
             print "i: " + str(i)
         # load hash functions

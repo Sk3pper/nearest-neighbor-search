@@ -3,7 +3,6 @@
 # it finds the all the documents pairs that are near each other.
 import time
 
-from minhash_signature.minhash_signature import random_hash
 from utils.TriangleIndex import getTriangleIndex
 import math
 import math
