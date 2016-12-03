@@ -7,6 +7,7 @@ import os
 from locally_sensitive_hashing.lsh import compareMinHash
 from locally_sensitive_hashing.lsh_improve import compareMinHash_improve
 from minhash_signature.minhash_signature import MinHash
+from nearest_neighbors.nearest_neighbors import J_nearest_neighbors
 from utils.TriangleIndex import getTriangleIndex
 import json
 from utils.extract_info import extract_string_recipe
@@ -19,6 +20,14 @@ def compare_methods(collection, debug=None):
     numDocs = len(collection)
     if debug:
         print "numDocs: " + str(numDocs)
+        # calculate two methods
+
+    print "\nCalculating JSim..."
+    JResult = J_nearest_neighbors(collection, True)
+    JSim = JResult[0]  # [0 for x in range(int(len(collection) * (len(collection) - 1) / 2))]
+    Jsize_inter = JResult[1]  # [0 for x in range(int(len(collection) * (len(collection) - 1) / 2))]
+    # print JSim
+
 
     print "\nCalculating estJSim..."
     estJSimResult = compareMinHash_improve(MinHash(collection, True))
@@ -26,15 +35,9 @@ def compare_methods(collection, debug=None):
     estJSimsize_inter = estJSimResult[1]
     # print estJSim
 
-    # calculate two methods
-    print "\nCalculating JSim..."
-    # JResult = J_nearest_neighbors(collection, True)
-    JSim = [0 for x in range(int(len(collection) * (len(collection) - 1) / 2))] # JResult[0]
-    Jsize_inter = [0 for x in range(int(len(collection) * (len(collection) - 1) / 2))] # JResult[1]
-    # [0 for x in range(int(len(collection) * (len(collection) - 1) / 2))]
-    # print JSim
 
-    print 'Write into file...'
+
+    # print 'Write into file...'
     # put_into_file(JSim, 'JSim.txt')
     # put_into_file(estJSim, 'estJSim.txt')
 
@@ -89,8 +92,6 @@ if __name__ == '__main__':
     collection = {}
     for recipe in recipes:
         collection[i] = extract_string_recipe(recipe)
-        if i == 706 or i == 707:
-            print collection[i]
         i += 1
 
     print 'read '+str(len(collection))+' recipes from .json'
@@ -103,53 +104,3 @@ if __name__ == '__main__':
     compare_methods(min_coll, True)
 
     # compare_methods(collection, True)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-'''numDocs = 1000
-dataFile = "/data/articles_" + str(numDocs) + ".train"
-dir = '/Users/andrea/Documents/workspace/nearest-neighbor-search/'
-# Open the data file.
-f = open(dir+dataFile, "rU")
-
-collection = {}
-
-for i in range(0, numDocs):
-
-    # Read all of the words (they are all on one line) and split them by white
-    # space.
-    doc = f.readline()
-
-    # Retrieve the article ID, which is the first word on the line.
-    docID = i
-    collection[docID] = doc
-   # print docID,doc
-
-#print collection
-# Close the data file.
-f.close()
-
-compare_methods(collection, True)'''

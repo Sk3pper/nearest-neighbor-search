@@ -28,7 +28,7 @@ def J_nearest_neighbors(collection, debug=None):
 
     print "Shingling articles..."
     t0 = time.time()
-    shingles_collection = getCollectionShingles(collection)
+    shingles_collection = getCollectionShingles(collection, True)
     # Report how long shingling took.
     print '\nShingling ' + str(len(collection)) + ' docs took %.2f sec.' % (time.time() - t0)
 
@@ -54,7 +54,7 @@ def J_nearest_neighbors(collection, debug=None):
             # print 's2: ' + str(len(s1))+'\n'
             # Calculate and store the actual Jaccard similarity.
             coordinate = getTriangleIndex(i, j, numDocs)
-            inter =  float(len(s1.intersection(s2)))
+            inter = float(len(s1.intersection(s2)))
             JSim[coordinate] = (inter) / float(len(s1.union(s2)))
             Intersection_matrix[coordinate] = inter
     # Calculate the elapsed time (in seconds)

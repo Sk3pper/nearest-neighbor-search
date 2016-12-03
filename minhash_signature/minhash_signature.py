@@ -65,14 +65,8 @@ def MinHash(collection, debug=None):
                     if docID == 706 or docID == 707:
                         s = shingle
                     minHashCode = hashcode
-
-            # Add the smallest hash code value as component number 'i' of the signature.
-            if docID == 706 or docID == 707:
-               sig = sig +' '+ str(s)+'==>' + str(minHashCode)
             signature.append(minHashCode)
 
-        if docID == 706 or docID == 707:
-            print sig
         signatures[docID] = signature
 
     # Calculate the elapsed time (in seconds)
@@ -100,16 +94,14 @@ def random_hash(num_hashes, debug=None):
 # NB = per collezione intendo un dizionario dove il DOC_ID e' la chiave per prendere la stringa del documento associato
 # poi fa tutto shingling che legge come una stringa
 # ritorna un dizionario di liste, dove ogni lista e' un documento rappresentato con le shingle
-def getCollectionShingles(collection, debug=None):
+def getCollectionShingles(collection, isSet=None, debug=None):
     print 'K = '+str(K)
     shingles_collection = {}
     totalShingles = 0
     if debug:
         print '#number of documents: ' + str(len(collection.keys()))
     for key in collection.keys():
-        s = shingling(collection[key], K)
-        # if key == 706 or key == 707:
-            # print s
+        s = shingling(collection[key], K, isSet)
         totalShingles = totalShingles + len(s)
 
         shingles_collection[key] = s

@@ -11,7 +11,7 @@ from utils import unicode_ascii_decoder
 # come sara ma ordine diverso: ["title", "chef", "prep_time", "cook_time", "serves","dietary", "ingredients","methods"]
 
 def extract_string_recipe(recipe):
-    process_order = ["title","ingredients", "chef", "prep_time", "cook_time", "serves", "methods", "dietary", "descr"]
+    process_order = ["title", "ingredients", "chef", "prep_time", "cook_time", "serves", "methods", "dietary", "descr"]
     rec = ''
 
     for key in process_order:
@@ -24,27 +24,40 @@ def extract_string_recipe(recipe):
             for val in value:
                 if val == '':
                     continue
-                rec = rec + val + '\n'
+                val = unicodedata.normalize('NFKD', val).encode('ASCII', 'ignore')
+                val = val.replace("\n", '')
+                rec = rec + val
+            rec = rec + '\n'
 
         elif key == "methods":
             for val in value:
                 if val == '':
                     continue
-                rec = rec + val + '\n'
+                val = unicodedata.normalize('NFKD', val).encode('ASCII', 'ignore')
+                val = val.replace("\n", '')
+                rec = rec + val
+            rec = rec + '\n'
 
         elif key == "title":
+            value = unicodedata.normalize('NFKD', value).encode('ASCII', 'ignore')
+            value = value.replace("\n", '')
             rec = rec + value + '\n'
 
         elif key == "descr":
+            value = unicodedata.normalize('NFKD', value).encode('ASCII', 'ignore')
+            value = value.replace("\n", '')
             rec = rec + value + '\n'
 
         elif key == "dietary":
-            rec = rec + value+ '\n'
-
-        else:
+            value = unicodedata.normalize('NFKD', value).encode('ASCII', 'ignore')
+            value = value.replace("\n", '')
             rec = rec + value + '\n'
 
-    rec = unicodedata.normalize('NFKD', rec).encode('ASCII', 'ignore')
-    # print rec
+        else:
+            value = unicodedata.normalize('NFKD', value).encode('ASCII', 'ignore')
+            value = value.replace("\n", '')
+            rec = rec + value + '\n'
+
+    # rec = unicodedata.normalize('NFKD', rec).encode('ASCII', 'ignore')
 
     return rec

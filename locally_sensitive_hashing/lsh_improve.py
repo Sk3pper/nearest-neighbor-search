@@ -7,8 +7,8 @@ from utils.hashFamily import hashFamily
 from utils.log_calculate import log_dict
 
 # https://www.wolframalpha.com/input/?i=b*r%3D10,+(1%2Fb)%5E(1%2Fr)%3E0.8
-B = 3
-R = 4
+B = 2
+R = 5
 
 def compareMinHash_improve(signatures, debug=None):
     numDocs = len(signatures)
@@ -74,8 +74,6 @@ def compareMinHash_improve(signatures, debug=None):
                 else:
                     # we don't have the k-band, we have to calculate
                     band1 = str(h(str(signature1[k * R:(k + 1) * R])))
-                    if docID1 == 706 and docID2 == 707:
-                        print 'band1: '+str(signature1[k*R:(k+1)*R])+'=>'+band1
                     bs1.append(band1)
 
                 if safe_list_get(bs2, k) != None:
@@ -84,20 +82,12 @@ def compareMinHash_improve(signatures, debug=None):
                 else:
                     # we don't have the k-band, we have to calculate
                     band2 = str(h(str(signature2[k * R:(k + 1) * R])))
-                    if docID1 == 706 and docID2 == 707:
-                        print 'band2: '+str(signature2[k*R:(k+1)*R])+'=>'+ band2
                     bs2.append(band2)
-
-                if docID1 == 706 and docID2 == 707:
-                    print '706-707: bs1: ' + str(bs1)+' bs2: ' + str(bs2)
 
                 # after this line we have the two band and we have to compare
                 # if they are equal we can skip to the next pair
-                if docID1 == 706 and docID2 == 707:
-                    print band1+' '+band2+'\n'
                 if len(band1) != 0 and len(band2) != 0:
                     if band1 == band2:
-                        print 'found pair..'
                         # add for the deep compare
                         # save the info
                         if possibile_pairs_dataset.get(docID1) == None:
@@ -148,7 +138,7 @@ def compareMinHash_improve(signatures, debug=None):
             count = count + (signature1[k] == signature2[k])
             # print 'count: ', count
 
-        print "  %5s --> %5s   %.2f" % (docID1, docID2, (float(count) / float(n)))
+        # print "  %5s --> %5s   %.2f" % (docID1, docID2, (float(count) / float(n)))
 
         # Record the percentage of positions which matched.
         coord = getTriangleIndex(docID1, docID2, numDocs)
