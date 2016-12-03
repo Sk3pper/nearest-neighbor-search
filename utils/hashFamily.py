@@ -10,7 +10,8 @@ def hashFamily(i):
     def hashMember(x):
         # oss: facendo .digest() ritorna '\xbbd\x9c\x83\xdd\x1e\xa5\xc9\xd9\xde\xc9\xa1\x8d\xf0\xff\xe9'
         #      se facciamo .hexdigest() ritorna 'a4337bc45a8fc544c03f52dc550cd6e1e87021bc896588bd79e901e2'
-        return hashlib.sha1(x + salt).hexdigest()[-resultSize:]
+        # ritorniamo un intero perche' con digest/hexdigest non funziona nulla
+        return int(hashlib.sha1(x + salt).hexdigest()[-resultSize:], 16)
 
     return hashMember
 

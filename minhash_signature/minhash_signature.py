@@ -8,42 +8,31 @@
 # HO CAPITO: qui vuole che usiamo il punto 1!! Cosi data la collection creiamo le shingles per ogni document e poi la
 # signaturee
 
-# Number of hash functions used for the Min Hash Signature
-import random
-
 import time
-
 from shingling.shingling import shingling
 from utils.hashFamily import hashFamily
-import math
-
-# range of random.randint(A, B)
 from utils.log_calculate import log_dict
-
-A = 0
-B = 10000
 
 # numElems
 numElems = 0
-
 # K-shingles
 K = 10
-I = 2
+
 
 # number of random hash functions apply to perform signature
 # data la collezione, la collezione divisa per shingles, e le random_hash
 # ritorna la collezione di signature
 def MinHash(collection, debug=None):
+
     print "Shingling articles..."
     t0 = time.time()
     shingles_collection = getCollectionShingles(collection)
+    print 'Esempio di shingling del documento 0: ' + str(shingles_collection[shingles_collection.keys()[0]])
     # Report how long shingling took.
     print '\nShingling ' + str(len(collection)) + ' docs took %.2f sec.' % (time.time() - t0)
 
     t0 = time.time()
     print '\nGenerating random hash functions...'
-
-    # Count the number of positions in the minhash signature which are equal.
     n = log_dict(collection)
     hash_funcs = random_hash(n)
 
@@ -61,31 +50,36 @@ def MinHash(collection, debug=None):
         # The resulting minhash signature for THIS document.
         signature = []
 
+        s = ''
+        sig =''
         # For each of the random hash functions...
 
-        for hash in hash_funcs:
-            i = 0
+        for h in hash_funcs:
             # For each shingle in the document...
+            # set minHashCode to inf
+            minHashCode = float('inf')
             for shingle in shingles:
-                if i == 0:
-                    minHashCode = hash(str(shingle))
-                    value = minHashCode
-                    i += 1
-                else:
-                    value = hash(str(shingle))
 
-                if value < minHashCode and i != 0:
-                    minHashCode = value
+                hashcode = h(str(shingle))
+                if hashcode < minHashCode:
+                    if docID == 706 or docID == 707:
+                        s = shingle
+                    minHashCode = hashcode
 
             # Add the smallest hash code value as component number 'i' of the signature.
+            if docID == 706 or docID == 707:
+               sig = sig +' '+ str(s)+'==>' + str(minHashCode)
             signature.append(minHashCode)
 
+        if docID == 706 or docID == 707:
+            print sig
         signatures[docID] = signature
 
     # Calculate the elapsed time (in seconds)
     elapsed = (time.time() - t0)
     print "\nGenerating MinHash signatures took %.2fsec" % elapsed
 
+    print 'Esempio di una signatura del documento 0: ' + str(signatures[signatures.keys()[0]])
     return signatures
 
 
@@ -94,12 +88,11 @@ def random_hash(num_hashes, debug=None):
     # random.randint(a, b) Return a random integer N such that a <= N <= b. Alias for randrange(a, b+1)
     hash_funcs = []
     for j in range(0, num_hashes):
-        i = random.randint(A, B)
-        print i
         if debug:
-            print "i: " + str(i)
+            print ": " + str(j)
+        # print "j: " + str(j)
         # load hash functions
-        hash_funcs.append(hashFamily(i))
+        hash_funcs.append(hashFamily(j))
     return hash_funcs
 
 
@@ -108,12 +101,15 @@ def random_hash(num_hashes, debug=None):
 # poi fa tutto shingling che legge come una stringa
 # ritorna un dizionario di liste, dove ogni lista e' un documento rappresentato con le shingle
 def getCollectionShingles(collection, debug=None):
+    print 'K = '+str(K)
     shingles_collection = {}
     totalShingles = 0
     if debug:
-        print '#number of documents: '+ str(len(collection.keys()))
+        print '#number of documents: ' + str(len(collection.keys()))
     for key in collection.keys():
-        s = shingling(collection[key], K, I)
+        s = shingling(collection[key], K)
+        # if key == 706 or key == 707:
+            # print s
         totalShingles = totalShingles + len(s)
 
         shingles_collection[key] = s

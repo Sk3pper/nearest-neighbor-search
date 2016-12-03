@@ -22,6 +22,7 @@ def compareMinHash(signatures, debug=None):
     # Initialize empty list to store the similarity values.
     # 'estJSim' will be for the estimated Jaccard Similarities found by comparing the MinHash signatures.
     estJSim = [0 for x in range(numElems)]
+    Intersection_matrix = [0 for x in range(numElems)]
 
     # 3. Compare all MinHash signatures to one another.
     print '\nComparing all signatures...'
@@ -54,7 +55,9 @@ def compareMinHash(signatures, debug=None):
                 count = count + (signature1[k] == signature2[k])
 
             # Record the percentage of positions which matched.
-            estJSim[getTriangleIndex(i, j, numDocs)] = (float(count) / float(n))
+            coord = getTriangleIndex(i, j, numDocs)
+            estJSim[coord] = (float(count) / float(n))
+            Intersection_matrix[coord] = float(count)
 
             # if (float(count) / float(NUMHASHES)) > 0:
                 # print str(float(count) / float(NUMHASHES))
@@ -63,4 +66,7 @@ def compareMinHash(signatures, debug=None):
     elapsed = (time.time() - t0)
     print "\nComparing MinHash signatures took %.2fsec" % elapsed
 
-    return estJSim
+    result = []
+    result.append(estJSim)
+    result.append(Intersection_matrix)
+    return result

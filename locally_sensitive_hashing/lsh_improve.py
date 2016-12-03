@@ -2,31 +2,24 @@
 # given a collection of minwise hash signatures of a set of documents,
 # it finds the all the documents pairs that are near each other.
 import time
-
 from utils.TriangleIndex import getTriangleIndex
-import math
-import math
-
-# This is the number of components in the resulting MinHash signatures.
-# Correspondingly, it is also the number of random hash functions that
-# we will need in order to calculate the MinHash.
-
-# https://www.wolframalpha.com/input/?i=b*r%3D10,+(1%2Fb)%5E(1%2Fr)%3E0.8
 from utils.hashFamily import hashFamily
 from utils.log_calculate import log_dict
 
-B = 2
-R = 5
+# https://www.wolframalpha.com/input/?i=b*r%3D10,+(1%2Fb)%5E(1%2Fr)%3E0.8
+B = 3
+R = 4
 
 def compareMinHash_improve(signatures, debug=None):
     numDocs = len(signatures)
+
     if debug:
         print "numDocs: " + str(numDocs)
     # Calculate the number of elements needed in our triangle matrix
     numElems = int(numDocs * (numDocs - 1) / 2)
 
     # i need a hash function
-    h = hashFamily(int(986))
+    h = hashFamily(0)
 
     # Initialize empty list to store the similarity values.
     # 'estJSim' will be for the estimated Jaccard Similarities found by comparing the MinHash signatures.
@@ -72,52 +65,57 @@ def compareMinHash_improve(signatures, debug=None):
             if bs2 == None:
                 bs2 = []
 
+            # cicliamo per ogni banda, appena ne troviamo una uguale usciamo dal ciclo
+            # qua vado di coppia in coppia
             for k in range(0, B):
-                bs1_length = len(bs1)
+                if safe_list_get(bs1, k) != None:
+                    # we have yet the k-band
+                    band1 = str(bs1[k])
+                else:
+                    # we don't have the k-band, we have to calculate
+                    band1 = str(h(str(signature1[k * R:(k + 1) * R])))
+                    if docID1 == 706 and docID2 == 707:
+                        print 'band1: '+str(signature1[k*R:(k+1)*R])+'=>'+band1
+                    bs1.append(band1)
 
-                # se non abbiamo quella bada dobbiamo calcolarla
-                if bs1_length <= k:
+                if safe_list_get(bs2, k) != None:
+                    # we have yet the k-band
+                    band2 = str(bs2[k])
+                else:
+                    # we don't have the k-band, we have to calculate
+                    band2 = str(h(str(signature2[k * R:(k + 1) * R])))
+                    if docID1 == 706 and docID2 == 707:
+                        print 'band2: '+str(signature2[k*R:(k+1)*R])+'=>'+ band2
+                    bs2.append(band2)
 
-                    # print 'signature1: ' + str(signature1)
-                    # we have to calculate this band
-                    band1 = ''
-                    for y in range(0, R):
-                        # k give us the base of the band
-                        # print 'k: ', k
-                        # print 'y: ', y
-                        band1 += str(signature1[(k + 1) * y])
-                    # print band1
-                    bs1.append(h(band1))
-                    # print 'bs1 ' + str(bs1)
+                if docID1 == 706 and docID2 == 707:
+                    print '706-707: bs1: ' + str(bs1)+' bs2: ' + str(bs2)
 
-                bs2_length = len(bs2)
-                if bs2_length <= k:
-
-                    # print 'signature2: '+ str(signature2)
-                    # we have to calculate this band
-                    band2 = ''
-                    for y in range(0, R):
-                        # k give us the base of the band
-                        band2 += str(signature2[(k + 1) * y])
-
-                    #print band2
-                    bs2.append(h(band2))
-                    # print 'bs2: ' + str(bs2)
                 # after this line we have the two band and we have to compare
                 # if they are equal we can skip to the next pair
-                if band1 == band2:
-                    print 'found pair..'
-                    # add for the deep compare
-                    # save the info
-                    if possibile_pairs_dataset.get(docID1) == None:
-                        possibile_pairs_dataset[docID1] = signature1
-                    if possibile_pairs_dataset.get(docID2) == None:
-                        possibile_pairs_dataset[docID2] = signature2
+                if docID1 == 706 and docID2 == 707:
+                    print band1+' '+band2+'\n'
+                if len(band1) != 0 and len(band2) != 0:
+                    if band1 == band2:
+                        print 'found pair..'
+                        # add for the deep compare
+                        # save the info
+                        if possibile_pairs_dataset.get(docID1) == None:
+                            possibile_pairs_dataset[docID1] = signature1
+                        if possibile_pairs_dataset.get(docID2) == None:
+                            possibile_pairs_dataset[docID2] = signature2
 
-                    # save the key of the pair
-                    possible_pairs.append(docID1)
-                    possible_pairs.append(docID2)
+                        # save the key of the pair
+                        possible_pairs.append(docID1)
+                        possible_pairs.append(docID2)
 
+                        # we can go out of the loop
+                        break
+                else:
+                    print 'ERRORREE band1 o band2 sono a zero, perche?'
+                    print band1
+                    print band2
+    # print possible_pairs
     elapsed = (time.time() - t0)
     print "\nCalculate the possible pairs... took %.2fsec" % elapsed
      # 3. Compare all MinHash signatures to one another.
@@ -135,16 +133,16 @@ def compareMinHash_improve(signatures, debug=None):
 
     for i in range(0, numPossiblePair):
         # Get the MinHash signature for document i.
-        docID1 = possible_pairs[i]
-        docID2 = possible_pairs[i+1]
-        i = docID1
-        j = docID2
+        docID1 = possible_pairs[i*2]
+        docID2 = possible_pairs[i*2+1]
+        # print str(docID1)+'-'+str(docID2)
 
         signature1 = possibile_pairs_dataset[docID1]
         signature2 = possibile_pairs_dataset[docID2]
+        # print 'signature1 :'+str(signature1)
+        # print 'signature2:' + str(signature2)
         count = 0
         for k in range(0, n):
-
             # print signature1[k]
             # print signature2[k]
             count = count + (signature1[k] == signature2[k])
@@ -153,7 +151,7 @@ def compareMinHash_improve(signatures, debug=None):
         print "  %5s --> %5s   %.2f" % (docID1, docID2, (float(count) / float(n)))
 
         # Record the percentage of positions which matched.
-        coord = getTriangleIndex(i, j, numDocs)
+        coord = getTriangleIndex(docID1, docID2, numDocs)
         estJSim[coord] = (float(count) / float(n))
         Intersection_matrix[coord] = float(count)
 
@@ -164,3 +162,10 @@ def compareMinHash_improve(signatures, debug=None):
     result.append(estJSim)
     result.append(Intersection_matrix)
     return result
+
+
+def safe_list_get (l, idx, default=None):
+  try:
+    return l[idx]
+  except IndexError:
+    return default

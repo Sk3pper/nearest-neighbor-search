@@ -2,16 +2,13 @@
 #                   Display Similar Document Pairs
 # ============================================================================
 
-import time
 import os
+
 from locally_sensitive_hashing.lsh import compareMinHash
 from locally_sensitive_hashing.lsh_improve import compareMinHash_improve
 from minhash_signature.minhash_signature import MinHash
-from nearest_neighbors.nearest_neighbors import J_nearest_neighbors
-from utils import unicode_ascii_decoder
 from utils.TriangleIndex import getTriangleIndex
 import json
-
 from utils.extract_info import extract_string_recipe
 from utils.write_file import put_into_file
 
@@ -37,11 +34,9 @@ def compare_methods(collection, debug=None):
     # [0 for x in range(int(len(collection) * (len(collection) - 1) / 2))]
     # print JSim
 
-
-
     print 'Write into file...'
-    put_into_file(JSim, 'JSim.txt')
-    put_into_file(estJSim, 'estJSim.txt')
+    # put_into_file(JSim, 'JSim.txt')
+    # put_into_file(estJSim, 'estJSim.txt')
 
     print "\nList of Document Pairs with J(d1,d2) more than", THRESHOLD
     print "Values shown are the estimated Jaccard similarity and the actual"
@@ -94,6 +89,8 @@ if __name__ == '__main__':
     collection = {}
     for recipe in recipes:
         collection[i] = extract_string_recipe(recipe)
+        if i == 706 or i == 707:
+            print collection[i]
         i += 1
 
     print 'read '+str(len(collection))+' recipes from .json'
