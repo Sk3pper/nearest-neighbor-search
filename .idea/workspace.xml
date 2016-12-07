@@ -4,9 +4,7 @@
     <list default="true" id="4b2c40b6-6988-4a00-b9e7-65a1aa4f14ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MinHash/runMinHashExample.py" afterPath="$PROJECT_DIR$/../MinHash/runMinHashExample.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../bbc-recipes-search-engine/search_engine/corpus_builder.py" afterPath="$PROJECT_DIR$/../bbc-recipes-search-engine/search_engine/corpus_builder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compare/compare_methods.py" afterPath="$PROJECT_DIR$/compare/compare_methods.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/locally_sensitive_hashing/lsh_improve.py" afterPath="$PROJECT_DIR$/locally_sensitive_hashing/lsh_improve.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minhash_signature/minhash_signature.py" afterPath="$PROJECT_DIR$/minhash_signature/minhash_signature.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result_test/result_tests.rtf" afterPath="$PROJECT_DIR$/result_test/result_tests.rtf" />
     </list>
     <ignored path="nearest-neighbor-search.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -653,7 +651,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="1.0" sideWeight="0.47997138" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.47997138" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
