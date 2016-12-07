@@ -1,8 +1,6 @@
 # =============================================================================
 #                 Generate MinHash Signatures
 # =============================================================================
-
-
 # Implement a class, that given a collection of sets of objects (e.g., strings, or numbers),
 # creates a minwise hashing based signature for each set.
 # HO CAPITO: qui vuole che usiamo il punto 1!! Cosi data la collection creiamo le shingles per ogni document e poi la
@@ -13,8 +11,6 @@ from shingling.shingling import shingling
 from utils.hashFamily import hashFamily
 from utils.log_calculate import log_dict
 
-# numElems
-numElems = 0
 # K-shingles
 K = 10
 
@@ -22,19 +18,19 @@ K = 10
 # number of random hash functions apply to perform signature
 # data la collezione, la collezione divisa per shingles, e le random_hash
 # ritorna la collezione di signature
-def MinHash(collection, debug=None):
-
+def MinHash(collection, ByteHashFamily, N, ByteHashFamiliShingles, isHash, debug=None):
     print "Shingling articles..."
     t0 = time.time()
-    shingles_collection = getCollectionShingles(collection)
+
+    shingles_collection = getCollectionShingles(collection, ByteHashFamiliShingles, isHash)
     print 'Esempio di shingling del documento 0: ' + str(shingles_collection[shingles_collection.keys()[0]])
     # Report how long shingling took.
     print '\nShingling ' + str(len(collection)) + ' docs took %.2f sec.' % (time.time() - t0)
 
     t0 = time.time()
     print '\nGenerating random hash functions...'
-    n = log_dict(collection)
-    hash_funcs = random_hash(n)
+    n = N  # log_dict(collection)
+    hash_funcs = random_hash(n, ByteHashFamily)
 
     print '\nGenerating MinHash signatures for all documents...'
     signatures = {}
@@ -42,7 +38,7 @@ def MinHash(collection, debug=None):
     # oss: collection ed shingles_collection ed signatures con la stessa chiave si riferisce allo stesso oggetto
     for docID in collection.keys():
         # Print progress every 100 documents.
-        if (docID % 100) == 0:
+        if (docID % 2000) == 0:
             print "  (" + str(docID) + " / " + str(len(collection)) + ")"
         # Get the shingle set of shingles for this document.
         shingles = shingles_collection[docID]
@@ -50,8 +46,6 @@ def MinHash(collection, debug=None):
         # The resulting minhash signature for THIS document.
         signature = []
 
-        s = ''
-        sig =''
         # For each of the random hash functions...
 
         for h in hash_funcs:
@@ -59,15 +53,18 @@ def MinHash(collection, debug=None):
             # set minHashCode to inf
             minHashCode = float('inf')
             for shingle in shingles:
-
                 hashcode = h(str(shingle))
                 if hashcode < minHashCode:
-                    if docID == 706 or docID == 707:
-                        s = shingle
+                    if (docID == 2343 or docID == 3860) or (docID == 6507 or docID == 6508) or (
+                            docID == 8289 or docID == 8290):
+                        print 'docID:', docID
+                        print 'shingle: ' + str(shingle)
+                        print 'minHashCode: '+str(minHashCode)
                     minHashCode = hashcode
             signature.append(minHashCode)
 
         signatures[docID] = signature
+
 
     # Calculate the elapsed time (in seconds)
     elapsed = (time.time() - t0)
@@ -78,7 +75,7 @@ def MinHash(collection, debug=None):
 
 
 # returns a list of hash function pointer
-def random_hash(num_hashes, debug=None):
+def random_hash(num_hashes, ByteHashFamily, debug=None):
     # random.randint(a, b) Return a random integer N such that a <= N <= b. Alias for randrange(a, b+1)
     hash_funcs = []
     for j in range(0, num_hashes):
@@ -86,7 +83,7 @@ def random_hash(num_hashes, debug=None):
             print ": " + str(j)
         # print "j: " + str(j)
         # load hash functions
-        hash_funcs.append(hashFamily(j))
+        hash_funcs.append(hashFamily(j, ByteHashFamily))
     return hash_funcs
 
 
@@ -94,14 +91,14 @@ def random_hash(num_hashes, debug=None):
 # NB = per collezione intendo un dizionario dove il DOC_ID e' la chiave per prendere la stringa del documento associato
 # poi fa tutto shingling che legge come una stringa
 # ritorna un dizionario di liste, dove ogni lista e' un documento rappresentato con le shingle
-def getCollectionShingles(collection, isSet=None, debug=None):
-    print 'K = '+str(K)
+def getCollectionShingles(collection, ByteHashFamiliShingles, isHash, isSet=None, debug=None):
+    print 'K = ' + str(K)
     shingles_collection = {}
     totalShingles = 0
     if debug:
         print '#number of documents: ' + str(len(collection.keys()))
     for key in collection.keys():
-        s = shingling(collection[key], K, isSet)
+        s = shingling(collection[key], K, ByteHashFamiliShingles, isHash, isSet)
         totalShingles = totalShingles + len(s)
 
         shingles_collection[key] = s

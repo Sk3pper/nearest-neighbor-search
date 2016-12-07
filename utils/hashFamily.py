@@ -2,8 +2,8 @@
 # integer to define the member of the family.
 # Return a hash function parametrized by i
 import hashlib
-def hashFamily(i):
-    resultSize = 8 # how many bytes we want back
+def hashFamily(i, resultSize):
+    # resultSize = 4 # how many bytes we want back
     maxLen = 20 # how long can our i be (in decimal)
     salt = str(i).zfill(maxLen)[-maxLen:]
 

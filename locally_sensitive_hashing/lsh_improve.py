@@ -4,22 +4,21 @@
 import time
 from utils.TriangleIndex import getTriangleIndex
 from utils.hashFamily import hashFamily
-from utils.log_calculate import log_dict
 
 # https://www.wolframalpha.com/input/?i=b*r%3D10,+(1%2Fb)%5E(1%2Fr)%3E0.8
-B = 2
-R = 5
 
-def compareMinHash_improve(signatures, debug=None):
+def compareMinHash_improve(signatures, ByteHashFamily, B, R, N, debug=None):
     numDocs = len(signatures)
 
+    print 'B: ', B
+    print 'R: ', R
     if debug:
         print "numDocs: " + str(numDocs)
     # Calculate the number of elements needed in our triangle matrix
     numElems = int(numDocs * (numDocs - 1) / 2)
 
     # i need a hash function
-    h = hashFamily(0)
+    h = hashFamily(0, ByteHashFamily)
 
     # Initialize empty list to store the similarity values.
     # 'estJSim' will be for the estimated Jaccard Similarities found by comparing the MinHash signatures.
@@ -44,7 +43,7 @@ def compareMinHash_improve(signatures, debug=None):
         docID1 = i
 
         # Print progress every 100 documents.
-        if (docID1 % 100) == 0:
+        if (docID1 % 1000) == 0:
             print "  (" + str(docID1) + " / " + str(numDocs) + ")"
         signature1 = signatures[docID1]
 
@@ -73,7 +72,12 @@ def compareMinHash_improve(signatures, debug=None):
                     band1 = str(bs1[k])
                 else:
                     # we don't have the k-band, we have to calculate
+                    if (docID1 == 2343 and docID2 == 3860) or (docID1 == 6507 and docID2 == 6508) or (
+                            docID1 == 8289 and docID2 == 8290):
+                            print 'docID1:', docID1
+                            print str(signature1[k * R:(k + 1) * R])
                     band1 = str(h(str(signature1[k * R:(k + 1) * R])))
+
                     bs1.append(band1)
 
                 if safe_list_get(bs2, k) != None:
@@ -81,11 +85,30 @@ def compareMinHash_improve(signatures, debug=None):
                     band2 = str(bs2[k])
                 else:
                     # we don't have the k-band, we have to calculate
+                    if (docID1 == 2343 and docID2 == 3860) or (docID1 == 6507 and docID2 == 6508) or (
+                                    docID1 == 8289 and docID2 == 8290):
+                        print 'docID2:', docID2
+                        print str(signature2[k * R:(k + 1) * R])
+
                     band2 = str(h(str(signature2[k * R:(k + 1) * R])))
                     bs2.append(band2)
 
                 # after this line we have the two band and we have to compare
                 # if they are equal we can skip to the next pair
+                # 2343 -->  3860
+                # 6507 -->  6508
+                # 8289 -->  8290
+
+                if (docID1==2343 and docID2==3860) or (docID1==6507 and docID2==6508) or (docID1==8289 and  docID2==8290):
+                    print 'docID1:', docID1
+                    print 'docID2:', docID2
+                    print 'signature1: ',signature1
+                    print 'signature2: ', signature2
+                    print band1
+                    print band2
+                    print '\n'
+
+
                 if len(band1) != 0 and len(band2) != 0:
                     if band1 == band2:
                         # add for the deep compare
@@ -119,7 +142,7 @@ def compareMinHash_improve(signatures, debug=None):
     # For each of the test documents...
 
     # Count the number of positions in the minhash signature which are equal.
-    n = log_dict(signatures)
+    n = N  # log_dict(signatures)
 
     for i in range(0, numPossiblePair):
         # Get the MinHash signature for document i.
@@ -154,7 +177,7 @@ def compareMinHash_improve(signatures, debug=None):
     return result
 
 
-def safe_list_get (l, idx, default=None):
+def safe_list_get(l, idx, default=None):
   try:
     return l[idx]
   except IndexError:

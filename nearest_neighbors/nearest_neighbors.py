@@ -13,7 +13,7 @@ from minhash_signature.minhash_signature import getCollectionShingles
 from utils.TriangleIndex import getTriangleIndex
 
 
-def J_nearest_neighbors(collection, debug=None):
+def J_nearest_neighbors(collection, ByteHashFamiliShingles, isHash, debug=None):
 
     numDocs = len(collection)
     if debug:
@@ -28,7 +28,7 @@ def J_nearest_neighbors(collection, debug=None):
 
     print "Shingling articles..."
     t0 = time.time()
-    shingles_collection = getCollectionShingles(collection, True)
+    shingles_collection = getCollectionShingles(collection, ByteHashFamiliShingles, isHash, isSet=True)
     # Report how long shingling took.
     print '\nShingling ' + str(len(collection)) + ' docs took %.2f sec.' % (time.time() - t0)
 
@@ -41,7 +41,7 @@ def J_nearest_neighbors(collection, debug=None):
     for i in range(0, numDocs):
 
         # Print progress every 100 documents.
-        if (i % 100) == 0:
+        if (i % 1000) == 0:
             print "  (" + str(i) + " / " + str(numDocs) + ")"
 
         # Retrieve the set of shingles for document i.
