@@ -45,6 +45,7 @@ def MinHash(collection, ByteHashFamily, N, ByteHashFamiliShingles, isHash, debug
 
         # The resulting minhash signature for THIS document.
         signature = []
+        s = []
 
         # For each of the random hash functions...
 
@@ -55,15 +56,22 @@ def MinHash(collection, ByteHashFamily, N, ByteHashFamiliShingles, isHash, debug
             for shingle in shingles:
                 hashcode = h(str(shingle))
                 if hashcode < minHashCode:
-                    if (docID == 2343 or docID == 3860) or (docID == 6507 or docID == 6508) or (
-                            docID == 8289 or docID == 8290):
-                        print 'docID:', docID
-                        print 'shingle: ' + str(shingle)
-                        print 'minHashCode: '+str(minHashCode)
+                    if (docID == 2343 or docID == 3860) or (docID == 6507 or docID == 6508) or (docID == 8289 or docID == 8290):
+                        shi = shingle
                     minHashCode = hashcode
+
             signature.append(minHashCode)
 
+            if (docID == 2343 or docID == 3860) or (docID == 6507 or docID == 6508) or (docID == 8289 or docID == 8290):
+                s.append(shi)
         signatures[docID] = signature
+
+        if (docID == 2343 or docID == 3860) or (docID == 6507 or docID == 6508) or (
+                    docID == 8289 or docID == 8290):
+            print 'docID:', docID
+            print 'shingles: ' + str(s)
+            print 'signatures: ' + str(signature)
+
 
 
     # Calculate the elapsed time (in seconds)

@@ -102,11 +102,10 @@ def compare_methods(collection, ByteHashFamily, B, R, N, ByteHashFamiliShingles,
             # Retrieve the estimated similarity value for this pair.
             coordinate = getTriangleIndex(i, j, numDocs)
             J = JSim[coordinate]
-            estJ = estJSim[coordinate]
 
             if J >= THRESHOLD:
                 # Print out the match and similarity values with pretty spacing.
-                print "%5s --> %5s   %.2f   %.2f" % (i, j, J, estJ)
+                print "%5s --> %5s   %.2f" % (i, j, J)
                 jacc_pairs.append((i, j))
                 count = count + 1
                 # For each of the document pairs...
@@ -183,9 +182,9 @@ if __name__ == '__main__':
     debug = True
 
 
-    print '##############################################################################################################################################################################'
-    print 'TEST..... ', 1
-    compare_methods(collection, ByteHashFamily=8, B=5, R=2, N=10, ByteHashFamiliShingles=6, isHash=None, debug=debug)
+    # print '##############################################################################################################################################################################'
+    # print 'TEST..... ', 1
+    # compare_methods(collection, ByteHashFamily=8, B=5, R=2, N=10, ByteHashFamiliShingles=6, isHash=None, debug=debug)
 
     print '##############################################################################################################################################################################'
     print 'TEST..... ', 2

@@ -1,0 +1,364 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh14820\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 /System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7 /Users/andrea/Documents/workspace/nearest-neighbor-search/compare/compare_methods.py\
+Load JSON...\
+Processing JSON...\
+read 11298 recipes from .json\
+##############################################################################################################################################################################\
+TEST.....  1\
+TEST with: \
+ByteHashFamily: 8 B: 5 R: 2 N: 10 ByteHashFamiliShingles: 6 isHash: None\
+numDocs: 11298\
+\
+Calculating JSim...\
+file j_results.txt exists\
+\
+Calculating estJSim...\
+Shingling articles...\
+K = 10\
+\
+Average shingles per doc: 1713.00\
+Esempio di shingling del documento 0: ['Ten-minute', 'en-minute ', 'n-minute p', '-minute pi', 'minute piz', 'inute pizz', 'nute pizza', 'ute pizza\\n', 'te pizza\\nF', 'e pizza\\nFo', ' pizza\\nFor', 'pizza\\nFor ', 'izza\\nFor t', 'zza\\nFor th', 'za\\nFor the', 'a\\nFor the ', '\\nFor the p', 'For the pi', 'or the piz', 'r the pizz', ' the pizza', 'the pizza ', 'he pizza b', 'e pizza ba', ' pizza bas', 'pizza base', 'izza base ', 'zza base 2', 'za base 25', 'a base 250', ' base 250g', 'base 250g/', 'ase 250g/8', 'se 250g/83', 'e 250g/834', ' 250g/834o', '250g/834oz', '50g/834oz ', '0g/834oz p', 'g/834oz pl', '/834oz pla', '834oz plai', '34oz plain', '4oz plain ', 'oz plain f', 'z plain fl', ' plain flo', 'plain flou', 'lain flour', 'ain flour,', 'in flour, ', 'n flour, p', ' flour, pl', 'flour, plu', 'lour, plus', 'our, plus ', 'ur, plus e', 'r, plus ex', ', plus ext', ' plus extr', 'plus extra', 'lus extra ', 'us extra f', 's extra fo', ' extra for', 'extra for ', 'xtra for d', 'tra for du', 'ra for dus', 'a for dust', ' for dusti', 'for dustin', 'or dusting', 'r dusting ', ' dusting 8', 'dusting 8 ', 'usting 8 t', 'sting 8 tb', 'ting 8 tbs', 'ing 8 tbsp', 'ng 8 tbsp ', 'g 8 tbsp o', ' 8 tbsp ol', '8 tbsp oli', ' tbsp oliv', 'tbsp olive', 'bsp olive ', 'sp olive o', 'p olive oi', ' olive oil', 'olive oil ', 'live oil 2', 'ive oil 2 ', 've oil 2 t', 'e oil 2 ts', ' oil 2 tsp', 'oil 2 tsp ', 'il 2 tsp w', 'l 2 tsp wa', ' 2 tsp wat', '2 tsp wate', ' tsp water', 'tsp water ', 'sp water 1', 'p water 1 ', ' water 1 t', 'water 1 ts', 'ater 1 tsp', 'ter 1 tsp ', 'er 1 tsp s', 'r 1 tsp se', ' 1 tsp sea', '1 tsp sea ', ' tsp sea s', 'tsp sea sa', 'sp sea sal', 'p sea salt', ' sea salt ', 'sea salt F', 'ea salt Fo', 'a salt For', ' salt For ', 'salt For t', 'alt For th', 'lt For the', 't For the ', ' For the t', 'For the to', 'or the top', 'r the topp', ' the toppi', 'the toppin', 'he topping', 'e topping ', ' topping 4', 'topping 4 ', 'opping 4 t', 'pping 4 tb', 'ping 4 tbs', 'ing 4 tbsp', 'ng 4 tbsp ', 'g 4 tbsp t', ' 4 tbsp to', '4 tbsp tom', ' tbsp toma', 'tbsp tomat', 'bsp tomato', 'sp tomato ', 'p tomato p', ' tomato pu', 'tomato pur', 'omato pure', 'mato puree', 'ato puree ', 'to puree 6', 'o puree 60', ' puree 60g', 'puree 60g/', 'uree 60g/2', 'ree 60g/21', 'ee 60g/214', 'e 60g/214o', ' 60g/214oz', '60g/214oz ', '0g/214oz s', 'g/214oz sh', '/214oz shi', '214oz shii', '14oz shiit', '4oz shiita', 'oz shiitak', 'z shiitake', ' shiitake ', 'shiitake m', 'hiitake mu', 'iitake mus', 'itake mush', 'take mushr', 'ake mushro', 'ke mushroo', 'e mushroom', ' mushrooms', 'mushrooms,', 'ushrooms, ', 'shrooms, s', 'hrooms, sl', 'rooms, sli', 'ooms, slic', 'oms, slice', 'ms, sliced', 's, sliced ', ', sliced 4', ' sliced 4 ', 'sliced 4 s', 'liced 4 sl', 'iced 4 sli', 'ced 4 slic', 'ed 4 slice', 'd 4 slices', ' 4 slices ', '4 slices p', ' slices pr', 'slices pro', 'lices pros', 'ices prosc', 'ces prosci', 'es prosciu', 's prosciut', ' prosciutt', 'prosciutto', 'rosciutto ', 'osciutto 1', 'sciutto 10', 'ciutto 100', 'iutto 100g', 'utto 100g/', 'tto 100g/3', 'to 100g/31', 'o 100g/312', ' 100g/312o', '100g/312oz', '00g/312oz ', '0g/312oz g', 'g/312oz go', '/312oz gor', '312oz gorg', '12oz gorgo', '2oz gorgon', 'oz gorgonz', 'z gorgonzo', ' gorgonzol', 'gorgonzola', 'orgonzola ', 'rgonzola c', 'gonzola ch', 'onzola che', 'nzola chee', 'zola chees', 'ola cheese', 'la cheese ', 'a cheese 1', ' cheese 1 ', 'cheese 1 f', 'heese 1 fr', 'eese 1 fre', 'ese 1 free', 'se 1 free-', 'e 1 free-r', ' 1 free-ra', '1 free-ran', ' free-rang', 'free-range', 'ree-range ', 'ee-range e', 'e-range eg', '-range egg', 'range egg\\n', 'ange egg\\nJ', 'nge egg\\nJa', 'ge egg\\nJam', 'e egg\\nJame', ' egg\\nJames', 'egg\\nJames ', 'gg\\nJames T', 'g\\nJames Ta', '\\nJames Tan', 'James Tann', 'ames Tanne', 'mes Tanner', 'es Tanner\\n', 's Tanner\\nl', ' Tanner\\nle', 'Tanner\\nles', 'anner\\nless', 'nner\\nless ', 'ner\\nless t', 'er\\nless th', 'r\\nless tha', '\\nless than', 'less than ', 'ess than 3', 'ss than 30', 's than 30 ', ' than 30 m', 'than 30 mi', 'han 30 min', 'an 30 mins', 'n 30 mins\\n', ' 30 mins\\nl', '30 mins\\nle', '0 mins\\nles', ' mins\\nless', 'mins\\nless ', 'ins\\nless t', 'ns\\nless th', 's\\nless tha', '\\nless than', 'less than ', 'ess than 1', 'ss than 10', 's than 10 ', ' than 10 m', 'than 10 mi', 'han 10 min', 'an 10 mins', 'n 10 mins\\n', ' 10 mins\\nM', '10 mins\\nMa', '0 mins\\nMak', ' mins\\nMake', 'mins\\nMakes', 'ins\\nMakes ', 'ns\\nMakes 1', 's\\nMakes 1\\n', '\\nMakes 1\\nP', 'Makes 1\\nPr', 'akes 1\\nPre', 'kes 1\\nPreh', 'es 1\\nPrehe', 's 1\\nPrehea', ' 1\\nPreheat', '1\\nPreheat ', '\\nPreheat t', 'Preheat th', 'reheat the', 'eheat the ', 'heat the o', 'eat the ov', 'at the ove', 't the oven', ' the oven ', 'the oven t', 'he oven to', 'e oven to ', ' oven to 2', 'oven to 20', 'ven to 200', 'en to 200C', 'n to 200C/', ' to 200C/4', 'to 200C/40', 'o 200C/400', ' 200C/400F', '200C/400F/', '00C/400F/G', '0C/400F/Ga', 'C/400F/Gas', '/400F/Gas ', '400F/Gas 6', '00F/Gas 6.', '0F/Gas 6.F', 'F/Gas 6.Fo', '/Gas 6.For', 'Gas 6.For ', 'as 6.For t', 's 6.For th', ' 6.For the', '6.For the ', '.For the p', 'For the pi', 'or the piz', 'r the pizz', ' the pizza', 'the pizza ', 'he pizza b', 'e pizza ba', ' pizza bas', 'pizza base', 'izza base,', 'zza base, ', 'za base, p', 'a base, pl', ' base, pla', 'base, plac', 'ase, place', 'se, place ', 'e, place t', ', place th', ' place the', 'place the ', 'lace the f', 'ace the fl', 'ce the flo', 'e the flou', ' the flour', 'the flour,', 'he flour, ', 'e flour, o', ' flour, oi', 'flour, oil', 'lour, oil,', 'our, oil, ', 'ur, oil, w', 'r, oil, wa', ', oil, wat', ' oil, wate', 'oil, water', 'il, water ', 'l, water a', ', water an', ' water and', 'water and ', 'ater and s', 'ter and sa', 'er and sal', 'r and salt', ' and salt ', 'and salt i', 'nd salt in', 'd salt int', ' salt into', 'salt into ', 'alt into a', 'lt into a ', 't into a f', ' into a fo', 'into a foo', 'nto a food', 'to a food ', 'o a food p', ' a food pr', 'a food pro', ' food proc', 'food proce', 'ood proces', 'od process', 'd processo', ' processor', 'processor ', 'rocessor a', 'ocessor an', 'cessor and', 'essor and ', 'ssor and b', 'sor and bl', 'or and ble', 'r and blen', ' and blend', 'and blend ', 'nd blend t', 'd blend to', ' blend tog', 'blend toge', 'lend toget', 'end togeth', 'nd togethe', 'd together', ' together ', 'together u', 'ogether un', 'gether unt', 'ether unti', 'ther until', 'her until ', 'er until a', 'r until a ', ' until a d', 'until a do', 'ntil a dou', 'til a doug', 'il a dough', 'l a dough ', ' a dough i', 'a dough is', ' dough is ', 'dough is f', 'ough is fo', 'ugh is for', 'gh is form', 'h is forme', ' is formed', 'is formed.', 's formed. ', ' formed. T', 'formed. Ti', 'ormed. Tip', 'rmed. Tip ', 'med. Tip o', 'ed. Tip ou', 'd. Tip out', '. Tip out ', ' Tip out o', 'Tip out on', 'ip out ont', 'p out onto', ' out onto ', 'out onto a', 'ut onto a ', 't onto a f', ' onto a fl', 'onto a flo', 'nto a flou', 'to a flour', 'o a floure', ' a floured', 'a floured ', ' floured w', 'floured wo', 'loured wor', 'oured work', 'ured work ', 'red work s', 'ed work su', 'd work sur', ' work surf', 'work surfa', 'ork surfac', 'rk surface', 'k surface ', ' surface a', 'surface an', 'urface and', 'rface and ', 'face and k', 'ace and kn', 'ce and kne', 'e and knea', ' and knead', 'and knead.', 'nd knead. ', 'd knead. S', ' knead. Sh', 'knead. Sha', 'nead. Shap', 'ead. Shape', 'ad. Shape ', 'd. Shape i', '. Shape in', ' Shape int', 'Shape into', 'hape into ', 'ape into a', 'pe into a ', 'e into a r', ' into a ro', 'into a rou', 'nto a roun', 'to a round', 'o a round ', ' a round b', 'a round ba', ' round bas', 'round base', 'ound base ', 'und base a', 'nd base ab', 'd base abo', ' base abou', 'base about', 'ase about ', 'se about 2', 'e about 20', ' about 20c', 'about 20cm', 'bout 20cm/', 'out 20cm/8', 'ut 20cm/8i', 't 20cm/8in', ' 20cm/8in ', '20cm/8in w', '0cm/8in wi', 'cm/8in wid', 'm/8in wide', '/8in wide.', '8in wide.P', 'in wide.Pl', 'n wide.Pla', ' wide.Plac', 'wide.Place', 'ide.Place ', 'de.Place i', 'e.Place in', '.Place int', 'Place into', 'lace into ', 'ace into a', 'ce into a ', 'e into a f', ' into a fr', 'into a fry', 'nto a fryi', 'to a fryin', 'o a frying', ' a frying ', 'a frying p', ' frying pa', 'frying pan', 'rying pan ', 'ying pan o', 'ing pan ov', 'ng pan ove', 'g pan over', ' pan over ', 'pan over a', 'an over a ', 'n over a h', ' over a hi', 'over a hig', 'ver a high', 'er a high ', 'r a high h', ' a high he', 'a high hea', ' high heat', 'high heat ', 'igh heat a', 'gh heat an', 'h heat and', ' heat and ', 'heat and b', 'eat and br', 'at and bro', 't and brow', ' and brown', 'and brown ', 'nd brown t', 'd brown th', ' brown the', 'brown the ', 'rown the b', 'own the ba', 'wn the bas', 'n the base', ' the base,', 'the base, ', 'he base, t', 'e base, th', ' base, the', 'base, then', 'ase, then ', 'se, then u', 'e, then us', ', then usi', ' then usin', 'then using', 'hen using ', 'en using a', 'n using a ', ' using a m', 'using a mi', 'sing a min', 'ing a mini', 'ng a mini-', 'g a mini-b', ' a mini-bl', 'a mini-blo', ' mini-blow', 'mini-blowt', 'ini-blowto', 'ni-blowtor', 'i-blowtorc', '-blowtorch', 'blowtorch,', 'lowtorch, ', 'owtorch, c', 'wtorch, cr', 'torch, cri', 'orch, cris', 'rch, crisp', 'ch, crisp ', 'h, crisp t', ', crisp th', ' crisp the', 'crisp the ', 'risp the t', 'isp the to', 'sp the top', 'p the top ', ' the top o', 'the top of', 'he top of ', 'e top of t', ' top of th', 'top of the', 'op of the ', 'p of the p', ' of the pi', 'of the piz', 'f the pizz', ' the pizza', 'the pizza.', 'he pizza. ', 'e pizza. (', ' pizza. (A', 'pizza. (Al', 'izza. (Alt', 'zza. (Alte', 'za. (Alter', 'a. (Altern', '. (Alterna', ' (Alternat', '(Alternati', 'Alternativ', 'lternative', 'ternativel', 'ernatively', 'rnatively ', 'natively y', 'atively yo', 'tively you', 'ively you ', 'vely you c', 'ely you ca', 'ly you can', 'y you can ', ' you can d', 'you can do', 'ou can do ', 'u can do t', ' can do th', 'can do thi', 'an do this', 'n do this ', ' do this u', 'do this un', 'o this und', ' this unde', 'this under', 'his under ', 'is under t', 's under th', ' under the', 'under the ', 'nder the g', 'der the gr', 'er the gri', 'r the gril', ' the grill', 'the grill.', 'he grill.)', 'e grill.)F', ' grill.)Fo', 'grill.)For', 'rill.)For ', 'ill.)For t', 'll.)For th', 'l.)For the', '.)For the ', ')For the t', 'For the to', 'or the top', 'r the topp', ' the toppi', 'the toppin', 'he topping', 'e topping,', ' topping, ', 'topping, s', 'opping, sp', 'pping, spr', 'ping, spre', 'ing, sprea', 'ng, spread', 'g, spread ', ', spread t', ' spread to', 'spread tom', 'pread toma', 'read tomat', 'ead tomato', 'ad tomato ', 'd tomato p', ' tomato pu', 'tomato pur', 'omato pure', 'mato puree', 'ato puree ', 'to puree o', 'o puree ov', ' puree ove', 'puree over', 'uree over ', 'ree over t', 'ee over th', 'e over the', ' over the ', 'over the t', 'ver the to', 'er the top', 'r the top ', ' the top o', 'the top of', 'he top of ', 'e top of t', ' top of th', 'top of the', 'op of the ', 'p of the b', ' of the ba', 'of the bas', 'f the base', ' the base.', 'the base.F', 'he base.Fr', 'e base.Fry', ' base.Fry ', 'base.Fry t', 'ase.Fry th', 'se.Fry the', 'e.Fry the ', '.Fry the m', 'Fry the mu', 'ry the mus', 'y the mush', ' the mushr', 'the mushro', 'he mushroo', 'e mushroom', ' mushrooms', 'mushrooms ', 'ushrooms i', 'shrooms in', 'hrooms in ', 'rooms in a', 'ooms in a ', 'oms in a d', 'ms in a dr', 's in a dry', ' in a dry ', 'in a dry f', 'n a dry fr', ' a dry fry', 'a dry fryi', ' dry fryin', 'dry frying', 'ry frying ', 'y frying p', ' frying pa', 'frying pan', 'rying pan ', 'ying pan t', 'ing pan th', 'ng pan the', 'g pan then', ' pan then ', 'pan then s', 'an then sc', 'n then sca', ' then scat', 'then scatt', 'hen scatte', 'en scatter', 'n scatter ', ' scatter o', 'scatter ov', 'catter ove', 'atter over', 'tter over ', 'ter over t', 'er over th', 'r over the', ' over the ', 'over the t', 'ver the to', 'er the tom', 'r the toma', ' the tomat', 'the tomato', 'he tomato ', 'e tomato p', ' tomato pu', 'tomato pur', 'omato pure', 'mato puree', 'ato puree.', 'to puree. ', 'o puree. A', ' puree. Ar', 'puree. Arr', 'uree. Arra', 'ree. Arran', 'ee. Arrang', 'e. Arrange', '. Arrange ', ' Arrange t', 'Arrange th', 'rrange the', 'range the ', 'ange the p', 'nge the pr', 'ge the pro', 'e the pros', ' the prosc', 'the prosci', 'he prosciu', 'e prosciut', ' prosciutt', 'prosciutto', 'rosciutto ', 'osciutto a', 'sciutto an', 'ciutto and', 'iutto and ', 'utto and c', 'tto and ch', 'to and che', 'o and chee', ' and chees', 'and cheese', 'nd cheese ', 'd cheese o', ' cheese on', 'cheese on ', 'heese on t', 'eese on to', 'ese on top', 'se on top.', 'e on top.C', ' on top.Cr', 'on top.Cra', 'n top.Crac', ' top.Crack', 'top.Crack ', 'op.Crack a', 'p.Crack an', '.Crack an ', 'Crack an e', 'rack an eg', 'ack an egg', 'ck an egg ', 'k an egg i', ' an egg in', 'an egg int', 'n egg into', ' egg into ', 'egg into t', 'gg into th', 'g into the', ' into the ', 'into the m', 'nto the mi', 'to the mid', 'o the midd', ' the middl', 'the middle', 'he middle,', 'e middle, ', ' middle, t', 'middle, th', 'iddle, the', 'ddle, then', 'dle, then ', 'le, then p', 'e, then pl', ', then pla', ' then plac', 'then place', 'hen place ', 'en place i', 'n place in', ' place int', 'place into', 'lace into ', 'ace into t', 'ce into th', 'e into the', ' into the ', 'into the o', 'nto the ov', 'to the ove', 'o the oven', ' the oven ', 'the oven f', 'he oven fo', 'e oven for', ' oven for ', 'oven for f', 'ven for fi', 'en for fiv', 'n for five', ' for five ', 'for five m', 'or five mi', 'r five min', ' five minu', 'five minut', 'ive minute', 've minutes', 'e minutes ', ' minutes t', 'minutes to', 'inutes to ', 'nutes to f', 'utes to fi', 'tes to fin', 'es to fini', 's to finis', ' to finish', 'to finish ', 'o finish c', ' finish co', 'finish coo', 'inish cook', 'nish cooki', 'ish cookin', 'sh cooking', 'h cooking.', ' cooking.S', 'cooking.Se', 'ooking.Ser', 'oking.Serv', 'king.Serve', 'ing.Serve ', 'ng.Serve o', 'g.Serve on', '.Serve on ', 'Serve on a', 'erve on a ', 'rve on a l', 've on a la', 'e on a lar', ' on a larg', 'on a large', 'n a large ', ' a large p', 'a large pl', ' large pla', 'large plat', 'arge plate', 'rge plate,', 'ge plate, ', 'e plate, a', ' plate, an', 'plate, and', 'late, and ', 'ate, and s', 'te, and sl', 'e, and sli', ', and slic', ' and slice', 'and slice ', 'nd slice i', 'd slice in', ' slice int', 'slice into', 'lice into ', 'ice into w', 'ce into we', 'e into wed', ' into wedg', 'into wedge', 'nto wedges', 'to wedges ', 'o wedges t', ' wedges to', 'wedges to ', 'edges to s', 'dges to se', 'ges to ser', 'es to serv', 's to serve', ' to serve.', 'to serve.\\n']\
+\
+Shingling 11298 docs took 4.07 sec.\
+\
+Generating random hash functions...\
+\
+Generating MinHash signatures for all documents...\
+  (0 / 11298)\
+  (2000 / 11298)\
+docID: 2343\
+shingles: [' the mixtu', 'corate wit', 'es and the', 'cinnamon 1', ' a food pr', 'esents or ', 'p the doug', 'ther. Tip ', 'ly until s', 'tra for ro']\
+signatures: [196925, 681683, 17446163, 10237039, 3208112, 2761198, 3876005, 855043, 7304773, 11613]\
+docID: 3860\
+shingles: [' the mixtu', 'ng.When co', 'een them.B', 'cinnamon 1', 'Gingerbrea', 'our, plus ', 'p the doug', 'd briefly ', 'ly until s', 'tra for ro']\
+signatures: [196925, 475529, 5429378, 10237039, 2176483, 3808743, 3876005, 5986549, 7304773, 11613]\
+  (4000 / 11298)\
+  (6000 / 11298)\
+docID: 6507\
+shingles: ['reast over', ' with cher', 'at a fryin', ' and fresh', 'sted duck ', 'ce in the ', 'ner\\nless t', 'k 12 duck ', 'the cherri', 'Remove and']\
+signatures: [3265001, 10378053, 428422, 9080823, 3132301, 3422500, 529232, 1953407, 6270471, 1569064]\
+docID: 6508\
+shingles: ['reast over', 'gmented 1 ', 'pote sauce', ' and fresh', 'sted duck ', 'ce in the ', 'ner\\nless t', 'k 12 duck ', 'sugar.Add ', 'Remove and']\
+signatures: [3265001, 9075515, 835, 9080823, 3132301, 3422500, 529232, 1953407, 9061478, 1569064]\
+  (8000 / 11298)\
+docID: 8289\
+shingles: [' knead the', 'ky-smooth ', 'cornmeal, ', 'slightly, ', 'using a fo', 'our, plus ', ' but worth', 'or quiches', 'parchment ', 't, the res']\
+signatures: [1625359, 9063, 939228, 5135365, 492790, 3808743, 1974666, 3949036, 745473, 67198]\
+docID: 8290\
+shingles: [' knead the', ' some liqu', 'cornmeal, ', 'slightly, ', 'using a fo', 'h slightly', 'y well shr', ' try not t', 'parchment ', 't, the res']\
+signatures: [1625359, 1932124, 939228, 5135365, 492790, 5380207, 2174393, 4237169, 745473, 67198]\
+  (10000 / 11298)\
+\
+Generating MinHash signatures took 379.35sec\
+Esempio di una signatura del documento 0: [499988, 11328298, 1685041, 2804683, 3208112, 3808743, 529232, 9946200, 13369801, 12407937]\
+B:  5\
+R:  2\
+numDocs: 11298\
+\
+Calculate the possible pairs...\
+  (0 / 11298)\
+  (1000 / 11298)\
+  (2000 / 11298)\
+docID2: 3860\
+[196925, 475529]\
+docID1: 2343\
+docID2: 3860\
+signature1:  [196925, 681683, 17446163, 10237039, 3208112, 2761198, 3876005, 855043, 7304773, 11613]\
+signature2:  [196925, 475529, 5429378, 10237039, 2176483, 3808743, 3876005, 5986549, 7304773, 11613]\
+81449105\
+213609960\
+\
+\
+docID2: 3860\
+[5429378, 10237039]\
+docID1: 2343\
+docID2: 3860\
+signature1:  [196925, 681683, 17446163, 10237039, 3208112, 2761198, 3876005, 855043, 7304773, 11613]\
+signature2:  [196925, 475529, 5429378, 10237039, 2176483, 3808743, 3876005, 5986549, 7304773, 11613]\
+3486937074\
+669191609\
+\
+\
+docID2: 3860\
+[2176483, 3808743]\
+docID1: 2343\
+docID2: 3860\
+signature1:  [196925, 681683, 17446163, 10237039, 3208112, 2761198, 3876005, 855043, 7304773, 11613]\
+signature2:  [196925, 475529, 5429378, 10237039, 2176483, 3808743, 3876005, 5986549, 7304773, 11613]\
+2967860946\
+3285676968\
+\
+\
+docID2: 3860\
+[3876005, 5986549]\
+docID1: 2343\
+docID2: 3860\
+signature1:  [196925, 681683, 17446163, 10237039, 3208112, 2761198, 3876005, 855043, 7304773, 11613]\
+signature2:  [196925, 475529, 5429378, 10237039, 2176483, 3808743, 3876005, 5986549, 7304773, 11613]\
+3282829930\
+590508624\
+\
+\
+docID2: 3860\
+[7304773, 11613]\
+docID1: 2343\
+docID2: 3860\
+signature1:  [196925, 681683, 17446163, 10237039, 3208112, 2761198, 3876005, 855043, 7304773, 11613]\
+signature2:  [196925, 475529, 5429378, 10237039, 2176483, 3808743, 3876005, 5986549, 7304773, 11613]\
+670377547\
+670377547\
+\
+\
+  (3000 / 11298)\
+  (4000 / 11298)\
+  (5000 / 11298)\
+  (6000 / 11298)\
+docID1: 6507\
+[3265001, 10378053]\
+docID2: 6508\
+[3265001, 9075515]\
+docID1: 6507\
+docID2: 6508\
+signature1:  [3265001, 10378053, 428422, 9080823, 3132301, 3422500, 529232, 1953407, 6270471, 1569064]\
+signature2:  [3265001, 9075515, 835, 9080823, 3132301, 3422500, 529232, 1953407, 9061478, 1569064]\
+1182672622\
+3452730489\
+\
+\
+docID1: 6507\
+[428422, 9080823]\
+docID2: 6508\
+[835, 9080823]\
+docID1: 6507\
+docID2: 6508\
+signature1:  [3265001, 10378053, 428422, 9080823, 3132301, 3422500, 529232, 1953407, 6270471, 1569064]\
+signature2:  [3265001, 9075515, 835, 9080823, 3132301, 3422500, 529232, 1953407, 9061478, 1569064]\
+3520126479\
+4056558990\
+\
+\
+docID1: 6507\
+[3132301, 3422500]\
+docID2: 6508\
+[3132301, 3422500]\
+docID1: 6507\
+docID2: 6508\
+signature1:  [3265001, 10378053, 428422, 9080823, 3132301, 3422500, 529232, 1953407, 6270471, 1569064]\
+signature2:  [3265001, 9075515, 835, 9080823, 3132301, 3422500, 529232, 1953407, 9061478, 1569064]\
+207073053\
+207073053\
+\
+\
+  (7000 / 11298)\
+  (8000 / 11298)\
+docID1: 8289\
+[1625359, 9063]\
+docID2: 8290\
+[1625359, 1932124]\
+docID1: 8289\
+docID2: 8290\
+signature1:  [1625359, 9063, 939228, 5135365, 492790, 3808743, 1974666, 3949036, 745473, 67198]\
+signature2:  [1625359, 1932124, 939228, 5135365, 492790, 5380207, 2174393, 4237169, 745473, 67198]\
+378942232\
+4125887387\
+\
+\
+docID1: 8289\
+[939228, 5135365]\
+docID2: 8290\
+[939228, 5135365]\
+docID1: 8289\
+docID2: 8290\
+signature1:  [1625359, 9063, 939228, 5135365, 492790, 3808743, 1974666, 3949036, 745473, 67198]\
+signature2:  [1625359, 1932124, 939228, 5135365, 492790, 5380207, 2174393, 4237169, 745473, 67198]\
+3364173713\
+3364173713\
+\
+\
+  (9000 / 11298)\
+  (10000 / 11298)\
+  (11000 / 11298)\
+\
+Calculate the possible pairs... took 1753.60sec\
+\
+Comparing the possible pairs found...\
+\
+Comparing MinHash signatures took 1.19sec\
+\
+List of Document Pairs with J(d1,d2) more than 0.8\
+Values shown are the estimated Jaccard similarity and the actual\
+Jaccard similarity.\
+\
+  203 -->  9066   0.83   0.90\
+  645 -->   646   0.82   0.90\
+ 2343 -->  3860   0.82   0.50\
+ 3035 -->  3036   1.00   1.00\
+ 6507 -->  6508   0.82   0.70\
+ 8289 -->  8290   0.83   0.60\
+[JACCARD] document pairs founded: 6\
+###########################################\
+########################################\
+\
+  203 -->  9066   0.90\
+  208 -->  7637   0.90\
+  589 -->  2470   0.80\
+  645 -->   646   0.90\
+  702 -->  6068   0.80\
+  787 -->  2474   0.90\
+  986 -->  1326   0.80\
+ 1338 --> 10027   0.80\
+ 1649 -->  2634   0.80\
+ 1678 --> 10023   0.80\
+ 2991 -->  6805   0.80\
+ 3035 -->  3036   1.00\
+ 3081 -->  3693   0.80\
+ 3136 -->  3138   1.00\
+ 3239 -->  7535   0.90\
+ 3588 --> 10797   0.80\
+ 4302 -->  4699   1.00\
+ 4789 -->  9600   0.80\
+ 5324 -->  5797   0.80\
+ 5897 -->  5988   0.80\
+ 7640 --> 10954   0.80\
+[ESTIMATION] document pairs founded: 21\
+\
+ ###########################################\
+########################################\
+Calcualte the intersection..\
+     doc1    doc2    J   estJ\
+  645 -->   646   0.82   0.90\
+  203 -->  9066   0.83   0.90\
+ 3035 -->  3036   1.00   1.00\
+##############################################################################################################################################################################\
+\
+TEST.....  2\
+TEST with: \
+ByteHashFamily: 10 B: 5 R: 2 N: 10 ByteHashFamiliShingles: 8 isHash: None\
+numDocs: 11298\
+\
+Calculating JSim...\
+file j_results.txt exists\
+\
+Calculating estJSim...\
+Shingling articles...\
+K = 10\
+\
+Average shingles per doc: 1713.00\
+Esempio di shingling del documento 0: ['Ten-minute', 'en-minute ', 'n-minute p', '-minute pi', 'minute piz', 'inute pizz', 'nute pizza', 'ute pizza\\n', 'te pizza\\nF', 'e pizza\\nFo', ' pizza\\nFor', 'pizza\\nFor ', 'izza\\nFor t', 'zza\\nFor th', 'za\\nFor the', 'a\\nFor the ', '\\nFor the p', 'For the pi', 'or the piz', 'r the pizz', ' the pizza', 'the pizza ', 'he pizza b', 'e pizza ba', ' pizza bas', 'pizza base', 'izza base ', 'zza base 2', 'za base 25', 'a base 250', ' base 250g', 'base 250g/', 'ase 250g/8', 'se 250g/83', 'e 250g/834', ' 250g/834o', '250g/834oz', '50g/834oz ', '0g/834oz p', 'g/834oz pl', '/834oz pla', '834oz plai', '34oz plain', '4oz plain ', 'oz plain f', 'z plain fl', ' plain flo', 'plain flou', 'lain flour', 'ain flour,', 'in flour, ', 'n flour, p', ' flour, pl', 'flour, plu', 'lour, plus', 'our, plus ', 'ur, plus e', 'r, plus ex', ', plus ext', ' plus extr', 'plus extra', 'lus extra ', 'us extra f', 's extra fo', ' extra for', 'extra for ', 'xtra for d', 'tra for du', 'ra for dus', 'a for dust', ' for dusti', 'for dustin', 'or dusting', 'r dusting ', ' dusting 8', 'dusting 8 ', 'usting 8 t', 'sting 8 tb', 'ting 8 tbs', 'ing 8 tbsp', 'ng 8 tbsp ', 'g 8 tbsp o', ' 8 tbsp ol', '8 tbsp oli', ' tbsp oliv', 'tbsp olive', 'bsp olive ', 'sp olive o', 'p olive oi', ' olive oil', 'olive oil ', 'live oil 2', 'ive oil 2 ', 've oil 2 t', 'e oil 2 ts', ' oil 2 tsp', 'oil 2 tsp ', 'il 2 tsp w', 'l 2 tsp wa', ' 2 tsp wat', '2 tsp wate', ' tsp water', 'tsp water ', 'sp water 1', 'p water 1 ', ' water 1 t', 'water 1 ts', 'ater 1 tsp', 'ter 1 tsp ', 'er 1 tsp s', 'r 1 tsp se', ' 1 tsp sea', '1 tsp sea ', ' tsp sea s', 'tsp sea sa', 'sp sea sal', 'p sea salt', ' sea salt ', 'sea salt F', 'ea salt Fo', 'a salt For', ' salt For ', 'salt For t', 'alt For th', 'lt For the', 't For the ', ' For the t', 'For the to', 'or the top', 'r the topp', ' the toppi', 'the toppin', 'he topping', 'e topping ', ' topping 4', 'topping 4 ', 'opping 4 t', 'pping 4 tb', 'ping 4 tbs', 'ing 4 tbsp', 'ng 4 tbsp ', 'g 4 tbsp t', ' 4 tbsp to', '4 tbsp tom', ' tbsp toma', 'tbsp tomat', 'bsp tomato', 'sp tomato ', 'p tomato p', ' tomato pu', 'tomato pur', 'omato pure', 'mato puree', 'ato puree ', 'to puree 6', 'o puree 60', ' puree 60g', 'puree 60g/', 'uree 60g/2', 'ree 60g/21', 'ee 60g/214', 'e 60g/214o', ' 60g/214oz', '60g/214oz ', '0g/214oz s', 'g/214oz sh', '/214oz shi', '214oz shii', '14oz shiit', '4oz shiita', 'oz shiitak', 'z shiitake', ' shiitake ', 'shiitake m', 'hiitake mu', 'iitake mus', 'itake mush', 'take mushr', 'ake mushro', 'ke mushroo', 'e mushroom', ' mushrooms', 'mushrooms,', 'ushrooms, ', 'shrooms, s', 'hrooms, sl', 'rooms, sli', 'ooms, slic', 'oms, slice', 'ms, sliced', 's, sliced ', ', sliced 4', ' sliced 4 ', 'sliced 4 s', 'liced 4 sl', 'iced 4 sli', 'ced 4 slic', 'ed 4 slice', 'd 4 slices', ' 4 slices ', '4 slices p', ' slices pr', 'slices pro', 'lices pros', 'ices prosc', 'ces prosci', 'es prosciu', 's prosciut', ' prosciutt', 'prosciutto', 'rosciutto ', 'osciutto 1', 'sciutto 10', 'ciutto 100', 'iutto 100g', 'utto 100g/', 'tto 100g/3', 'to 100g/31', 'o 100g/312', ' 100g/312o', '100g/312oz', '00g/312oz ', '0g/312oz g', 'g/312oz go', '/312oz gor', '312oz gorg', '12oz gorgo', '2oz gorgon', 'oz gorgonz', 'z gorgonzo', ' gorgonzol', 'gorgonzola', 'orgonzola ', 'rgonzola c', 'gonzola ch', 'onzola che', 'nzola chee', 'zola chees', 'ola cheese', 'la cheese ', 'a cheese 1', ' cheese 1 ', 'cheese 1 f', 'heese 1 fr', 'eese 1 fre', 'ese 1 free', 'se 1 free-', 'e 1 free-r', ' 1 free-ra', '1 free-ran', ' free-rang', 'free-range', 'ree-range ', 'ee-range e', 'e-range eg', '-range egg', 'range egg\\n', 'ange egg\\nJ', 'nge egg\\nJa', 'ge egg\\nJam', 'e egg\\nJame', ' egg\\nJames', 'egg\\nJames ', 'gg\\nJames T', 'g\\nJames Ta', '\\nJames Tan', 'James Tann', 'ames Tanne', 'mes Tanner', 'es Tanner\\n', 's Tanner\\nl', ' Tanner\\nle', 'Tanner\\nles', 'anner\\nless', 'nner\\nless ', 'ner\\nless t', 'er\\nless th', 'r\\nless tha', '\\nless than', 'less than ', 'ess than 3', 'ss than 30', 's than 30 ', ' than 30 m', 'than 30 mi', 'han 30 min', 'an 30 mins', 'n 30 mins\\n', ' 30 mins\\nl', '30 mins\\nle', '0 mins\\nles', ' mins\\nless', 'mins\\nless ', 'ins\\nless t', 'ns\\nless th', 's\\nless tha', '\\nless than', 'less than ', 'ess than 1', 'ss than 10', 's than 10 ', ' than 10 m', 'than 10 mi', 'han 10 min', 'an 10 mins', 'n 10 mins\\n', ' 10 mins\\nM', '10 mins\\nMa', '0 mins\\nMak', ' mins\\nMake', 'mins\\nMakes', 'ins\\nMakes ', 'ns\\nMakes 1', 's\\nMakes 1\\n', '\\nMakes 1\\nP', 'Makes 1\\nPr', 'akes 1\\nPre', 'kes 1\\nPreh', 'es 1\\nPrehe', 's 1\\nPrehea', ' 1\\nPreheat', '1\\nPreheat ', '\\nPreheat t', 'Preheat th', 'reheat the', 'eheat the ', 'heat the o', 'eat the ov', 'at the ove', 't the oven', ' the oven ', 'the oven t', 'he oven to', 'e oven to ', ' oven to 2', 'oven to 20', 'ven to 200', 'en to 200C', 'n to 200C/', ' to 200C/4', 'to 200C/40', 'o 200C/400', ' 200C/400F', '200C/400F/', '00C/400F/G', '0C/400F/Ga', 'C/400F/Gas', '/400F/Gas ', '400F/Gas 6', '00F/Gas 6.', '0F/Gas 6.F', 'F/Gas 6.Fo', '/Gas 6.For', 'Gas 6.For ', 'as 6.For t', 's 6.For th', ' 6.For the', '6.For the ', '.For the p', 'For the pi', 'or the piz', 'r the pizz', ' the pizza', 'the pizza ', 'he pizza b', 'e pizza ba', ' pizza bas', 'pizza base', 'izza base,', 'zza base, ', 'za base, p', 'a base, pl', ' base, pla', 'base, plac', 'ase, place', 'se, place ', 'e, place t', ', place th', ' place the', 'place the ', 'lace the f', 'ace the fl', 'ce the flo', 'e the flou', ' the flour', 'the flour,', 'he flour, ', 'e flour, o', ' flour, oi', 'flour, oil', 'lour, oil,', 'our, oil, ', 'ur, oil, w', 'r, oil, wa', ', oil, wat', ' oil, wate', 'oil, water', 'il, water ', 'l, water a', ', water an', ' water and', 'water and ', 'ater and s', 'ter and sa', 'er and sal', 'r and salt', ' and salt ', 'and salt i', 'nd salt in', 'd salt int', ' salt into', 'salt into ', 'alt into a', 'lt into a ', 't into a f', ' into a fo', 'into a foo', 'nto a food', 'to a food ', 'o a food p', ' a food pr', 'a food pro', ' food proc', 'food proce', 'ood proces', 'od process', 'd processo', ' processor', 'processor ', 'rocessor a', 'ocessor an', 'cessor and', 'essor and ', 'ssor and b', 'sor and bl', 'or and ble', 'r and blen', ' and blend', 'and blend ', 'nd blend t', 'd blend to', ' blend tog', 'blend toge', 'lend toget', 'end togeth', 'nd togethe', 'd together', ' together ', 'together u', 'ogether un', 'gether unt', 'ether unti', 'ther until', 'her until ', 'er until a', 'r until a ', ' until a d', 'until a do', 'ntil a dou', 'til a doug', 'il a dough', 'l a dough ', ' a dough i', 'a dough is', ' dough is ', 'dough is f', 'ough is fo', 'ugh is for', 'gh is form', 'h is forme', ' is formed', 'is formed.', 's formed. ', ' formed. T', 'formed. Ti', 'ormed. Tip', 'rmed. Tip ', 'med. Tip o', 'ed. Tip ou', 'd. Tip out', '. Tip out ', ' Tip out o', 'Tip out on', 'ip out ont', 'p out onto', ' out onto ', 'out onto a', 'ut onto a ', 't onto a f', ' onto a fl', 'onto a flo', 'nto a flou', 'to a flour', 'o a floure', ' a floured', 'a floured ', ' floured w', 'floured wo', 'loured wor', 'oured work', 'ured work ', 'red work s', 'ed work su', 'd work sur', ' work surf', 'work surfa', 'ork surfac', 'rk surface', 'k surface ', ' surface a', 'surface an', 'urface and', 'rface and ', 'face and k', 'ace and kn', 'ce and kne', 'e and knea', ' and knead', 'and knead.', 'nd knead. ', 'd knead. S', ' knead. Sh', 'knead. Sha', 'nead. Shap', 'ead. Shape', 'ad. Shape ', 'd. Shape i', '. Shape in', ' Shape int', 'Shape into', 'hape into ', 'ape into a', 'pe into a ', 'e into a r', ' into a ro', 'into a rou', 'nto a roun', 'to a round', 'o a round ', ' a round b', 'a round ba', ' round bas', 'round base', 'ound base ', 'und base a', 'nd base ab', 'd base abo', ' base abou', 'base about', 'ase about ', 'se about 2', 'e about 20', ' about 20c', 'about 20cm', 'bout 20cm/', 'out 20cm/8', 'ut 20cm/8i', 't 20cm/8in', ' 20cm/8in ', '20cm/8in w', '0cm/8in wi', 'cm/8in wid', 'm/8in wide', '/8in wide.', '8in wide.P', 'in wide.Pl', 'n wide.Pla', ' wide.Plac', 'wide.Place', 'ide.Place ', 'de.Place i', 'e.Place in', '.Place int', 'Place into', 'lace into ', 'ace into a', 'ce into a ', 'e into a f', ' into a fr', 'into a fry', 'nto a fryi', 'to a fryin', 'o a frying', ' a frying ', 'a frying p', ' frying pa', 'frying pan', 'rying pan ', 'ying pan o', 'ing pan ov', 'ng pan ove', 'g pan over', ' pan over ', 'pan over a', 'an over a ', 'n over a h', ' over a hi', 'over a hig', 'ver a high', 'er a high ', 'r a high h', ' a high he', 'a high hea', ' high heat', 'high heat ', 'igh heat a', 'gh heat an', 'h heat and', ' heat and ', 'heat and b', 'eat and br', 'at and bro', 't and brow', ' and brown', 'and brown ', 'nd brown t', 'd brown th', ' brown the', 'brown the ', 'rown the b', 'own the ba', 'wn the bas', 'n the base', ' the base,', 'the base, ', 'he base, t', 'e base, th', ' base, the', 'base, then', 'ase, then ', 'se, then u', 'e, then us', ', then usi', ' then usin', 'then using', 'hen using ', 'en using a', 'n using a ', ' using a m', 'using a mi', 'sing a min', 'ing a mini', 'ng a mini-', 'g a mini-b', ' a mini-bl', 'a mini-blo', ' mini-blow', 'mini-blowt', 'ini-blowto', 'ni-blowtor', 'i-blowtorc', '-blowtorch', 'blowtorch,', 'lowtorch, ', 'owtorch, c', 'wtorch, cr', 'torch, cri', 'orch, cris', 'rch, crisp', 'ch, crisp ', 'h, crisp t', ', crisp th', ' crisp the', 'crisp the ', 'risp the t', 'isp the to', 'sp the top', 'p the top ', ' the top o', 'the top of', 'he top of ', 'e top of t', ' top of th', 'top of the', 'op of the ', 'p of the p', ' of the pi', 'of the piz', 'f the pizz', ' the pizza', 'the pizza.', 'he pizza. ', 'e pizza. (', ' pizza. (A', 'pizza. (Al', 'izza. (Alt', 'zza. (Alte', 'za. (Alter', 'a. (Altern', '. (Alterna', ' (Alternat', '(Alternati', 'Alternativ', 'lternative', 'ternativel', 'ernatively', 'rnatively ', 'natively y', 'atively yo', 'tively you', 'ively you ', 'vely you c', 'ely you ca', 'ly you can', 'y you can ', ' you can d', 'you can do', 'ou can do ', 'u can do t', ' can do th', 'can do thi', 'an do this', 'n do this ', ' do this u', 'do this un', 'o this und', ' this unde', 'this under', 'his under ', 'is under t', 's under th', ' under the', 'under the ', 'nder the g', 'der the gr', 'er the gri', 'r the gril', ' the grill', 'the grill.', 'he grill.)', 'e grill.)F', ' grill.)Fo', 'grill.)For', 'rill.)For ', 'ill.)For t', 'll.)For th', 'l.)For the', '.)For the ', ')For the t', 'For the to', 'or the top', 'r the topp', ' the toppi', 'the toppin', 'he topping', 'e topping,', ' topping, ', 'topping, s', 'opping, sp', 'pping, spr', 'ping, spre', 'ing, sprea', 'ng, spread', 'g, spread ', ', spread t', ' spread to', 'spread tom', 'pread toma', 'read tomat', 'ead tomato', 'ad tomato ', 'd tomato p', ' tomato pu', 'tomato pur', 'omato pure', 'mato puree', 'ato puree ', 'to puree o', 'o puree ov', ' puree ove', 'puree over', 'uree over ', 'ree over t', 'ee over th', 'e over the', ' over the ', 'over the t', 'ver the to', 'er the top', 'r the top ', ' the top o', 'the top of', 'he top of ', 'e top of t', ' top of th', 'top of the', 'op of the ', 'p of the b', ' of the ba', 'of the bas', 'f the base', ' the base.', 'the base.F', 'he base.Fr', 'e base.Fry', ' base.Fry ', 'base.Fry t', 'ase.Fry th', 'se.Fry the', 'e.Fry the ', '.Fry the m', 'Fry the mu', 'ry the mus', 'y the mush', ' the mushr', 'the mushro', 'he mushroo', 'e mushroom', ' mushrooms', 'mushrooms ', 'ushrooms i', 'shrooms in', 'hrooms in ', 'rooms in a', 'ooms in a ', 'oms in a d', 'ms in a dr', 's in a dry', ' in a dry ', 'in a dry f', 'n a dry fr', ' a dry fry', 'a dry fryi', ' dry fryin', 'dry frying', 'ry frying ', 'y frying p', ' frying pa', 'frying pan', 'rying pan ', 'ying pan t', 'ing pan th', 'ng pan the', 'g pan then', ' pan then ', 'pan then s', 'an then sc', 'n then sca', ' then scat', 'then scatt', 'hen scatte', 'en scatter', 'n scatter ', ' scatter o', 'scatter ov', 'catter ove', 'atter over', 'tter over ', 'ter over t', 'er over th', 'r over the', ' over the ', 'over the t', 'ver the to', 'er the tom', 'r the toma', ' the tomat', 'the tomato', 'he tomato ', 'e tomato p', ' tomato pu', 'tomato pur', 'omato pure', 'mato puree', 'ato puree.', 'to puree. ', 'o puree. A', ' puree. Ar', 'puree. Arr', 'uree. Arra', 'ree. Arran', 'ee. Arrang', 'e. Arrange', '. Arrange ', ' Arrange t', 'Arrange th', 'rrange the', 'range the ', 'ange the p', 'nge the pr', 'ge the pro', 'e the pros', ' the prosc', 'the prosci', 'he prosciu', 'e prosciut', ' prosciutt', 'prosciutto', 'rosciutto ', 'osciutto a', 'sciutto an', 'ciutto and', 'iutto and ', 'utto and c', 'tto and ch', 'to and che', 'o and chee', ' and chees', 'and cheese', 'nd cheese ', 'd cheese o', ' cheese on', 'cheese on ', 'heese on t', 'eese on to', 'ese on top', 'se on top.', 'e on top.C', ' on top.Cr', 'on top.Cra', 'n top.Crac', ' top.Crack', 'top.Crack ', 'op.Crack a', 'p.Crack an', '.Crack an ', 'Crack an e', 'rack an eg', 'ack an egg', 'ck an egg ', 'k an egg i', ' an egg in', 'an egg int', 'n egg into', ' egg into ', 'egg into t', 'gg into th', 'g into the', ' into the ', 'into the m', 'nto the mi', 'to the mid', 'o the midd', ' the middl', 'the middle', 'he middle,', 'e middle, ', ' middle, t', 'middle, th', 'iddle, the', 'ddle, then', 'dle, then ', 'le, then p', 'e, then pl', ', then pla', ' then plac', 'then place', 'hen place ', 'en place i', 'n place in', ' place int', 'place into', 'lace into ', 'ace into t', 'ce into th', 'e into the', ' into the ', 'into the o', 'nto the ov', 'to the ove', 'o the oven', ' the oven ', 'the oven f', 'he oven fo', 'e oven for', ' oven for ', 'oven for f', 'ven for fi', 'en for fiv', 'n for five', ' for five ', 'for five m', 'or five mi', 'r five min', ' five minu', 'five minut', 'ive minute', 've minutes', 'e minutes ', ' minutes t', 'minutes to', 'inutes to ', 'nutes to f', 'utes to fi', 'tes to fin', 'es to fini', 's to finis', ' to finish', 'to finish ', 'o finish c', ' finish co', 'finish coo', 'inish cook', 'nish cooki', 'ish cookin', 'sh cooking', 'h cooking.', ' cooking.S', 'cooking.Se', 'ooking.Ser', 'oking.Serv', 'king.Serve', 'ing.Serve ', 'ng.Serve o', 'g.Serve on', '.Serve on ', 'Serve on a', 'erve on a ', 'rve on a l', 've on a la', 'e on a lar', ' on a larg', 'on a large', 'n a large ', ' a large p', 'a large pl', ' large pla', 'large plat', 'arge plate', 'rge plate,', 'ge plate, ', 'e plate, a', ' plate, an', 'plate, and', 'late, and ', 'ate, and s', 'te, and sl', 'e, and sli', ', and slic', ' and slice', 'and slice ', 'nd slice i', 'd slice in', ' slice int', 'slice into', 'lice into ', 'ice into w', 'ce into we', 'e into wed', ' into wedg', 'into wedge', 'nto wedges', 'to wedges ', 'o wedges t', ' wedges to', 'wedges to ', 'edges to s', 'dges to se', 'ges to ser', 'es to serv', 's to serve', ' to serve.', 'to serve.\\n']\
+\
+Shingling 11298 docs took 3.91 sec.\
+\
+Generating random hash functions...\
+\
+Generating MinHash signatures for all documents...\
+  (0 / 11298)\
+  (2000 / 11298)\
+docID: 2343\
+shingles: [' a small h', 'out, knead', ' men\\n350g/', ' trays wit', 'processor ', 'p in cling', 'ole in the', 'shapes and', 'ng tray, l', 'ead men\\n35']\
+signatures: [600494917, 1488611350, 269624426, 132129690, 315117072, 184305260, 960710687, 118200106, 4172408210, 267965038]\
+docID: 3860\
+shingles: [' the food ', 'out, knead', ' men\\n350g/', ' trays wit', 'processor ', 'p in cling', 's and then', 'shapes and', 'ng tray, l', 'ead men\\n35']\
+signatures: [1618085303, 1488611350, 269624426, 132129690, 315117072, 184305260, 976323118, 118200106, 4172408210, 267965038]\
+  (4000 / 11298)\
+  (6000 / 11298)\
+docID: 6507\
+shingles: [' both side', 'reast over', 'cook the d', 'ur paste a', ' pan and c', 'il salt an', 'for eight ', 'nes remove', '0 mins\\nSer', 'oil then s']\
+signatures: [3378696023, 3875710250, 14365070, 1343664497, 3900006895, 159957645, 70942845, 2135040310, 668328234, 148060339]\
+docID: 6508\
+shingles: ['led and se', 'reast over', 'cook the d', 'ur paste a', ' pan and c', 'il salt an', 'for eight ', 'e, peeled ', '0 mins\\nSer', 'oil then s']\
+signatures: [868815970, 3875710250, 14365070, 1343664497, 3900006895, 159957645, 70942845, 1975030930, 668328234, 148060339]\
+  (8000 / 11298)\
+docID: 8289\
+shingles: ['igerate fo', '5oz butter', 'iches and ', 'bout 30 mi', '. Collect ', 'p in cling', 'll. Cut th', 'bes and ge', 'o add extr', ' into cube']\
+signatures: [652851030, 14568321, 510144675, 500233298, 345807025, 184305260, 161912795, 22423832, 379089682, 377177578]\
+docID: 8290\
+shingles: ['igerate fo', '5oz butter', 'f liquid. ', 'bout 30 mi', '. Collect ', 'p in cling', 'll. Cut th', 'bes and ge', 'o add extr', ' into cube']\
+signatures: [652851030, 14568321, 2319071260, 500233298, 345807025, 184305260, 161912795, 22423832, 379089682, 377177578]\
+  (10000 / 11298)\
+\
+Generating MinHash signatures took 369.59sec\
+Esempio di una signatura del documento 0: [1001295585, 1601231444, 330022358, 75051302, 216582165, 364994089, 679582661, 1279818612, 207040716, 1453052177]\
+B:  5\
+R:  2\
+numDocs: 11298\
+\
+Calculate the possible pairs...\
+  (0 / 11298)\
+  (1000 / 11298)\
+  (2000 / 11298)\
+  (3000 / 11298)\
+  (4000 / 11298)\
+  (5000 / 11298)\
+  (6000 / 11298)\
+  (7000 / 11298)\
+  (8000 / 11298)\
+  (9000 / 11298)\
+  (10000 / 11298)\
+  (11000 / 11298)\
+\
+Calculate the possible pairs... took 1701.54sec\
+\
+Comparing the possible pairs found...\
+\
+Comparing MinHash signatures took 0.81sec\
+\
+List of Document Pairs with J(d1,d2) more than 0.8\
+Values shown are the estimated Jaccard similarity and the actual\
+Jaccard similarity.\
+\
+  203 -->  9066   0.83\
+  645 -->   646   0.82\
+ 2343 -->  3860   0.82\
+ 3035 -->  3036   1.00\
+ 6507 -->  6508   0.82\
+ 8289 -->  8290   0.83\
+[JACCARD] document pairs founded: 6\
+###########################################\
+########################################\
+\
+  161 --> 10064   0.80\
+  203 -->  9066   0.80\
+  538 --> 10064   0.80\
+  645 -->   646   1.00\
+  787 -->  2474   1.00\
+ 1649 -->  2634   0.80\
+ 1667 -->  3411   0.80\
+ 1969 -->  3536   0.90\
+ 2343 -->  3860   0.80\
+ 3035 -->  3036   1.00\
+ 3081 -->  3693   0.90\
+ 3097 --> 10064   0.80\
+ 3124 -->  3631   0.80\
+ 3582 -->  6984   0.80\
+ 3588 --> 10797   0.80\
+ 4240 --> 10627   0.80\
+ 4532 -->  4533   0.80\
+ 4562 -->  6839   0.90\
+ 6507 -->  6508   0.80\
+ 7967 -->  7968   0.90\
+ 8289 -->  8290   0.90\
+ 8651 --> 10023   0.90\
+ 9643 --> 10064   0.80\
+ 9643 --> 10890   0.80\
+10064 --> 10890   0.80\
+[ESTIMATION] document pairs founded: 25\
+\
+ ###########################################\
+########################################\
+Calcualte the intersection..\
+     doc1    doc2    J   estJ\
+ 2343 -->  3860   0.82   0.80\
+ 8289 -->  8290   0.83   0.90\
+  203 -->  9066   0.83   0.80\
+  645 -->   646   0.82   1.00\
+ 6507 -->  6508   0.82   0.80\
+ 3035 -->  3036   1.00   1.00\
+##############################################################################################################################################################################\
+\
+}
