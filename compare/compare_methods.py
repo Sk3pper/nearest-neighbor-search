@@ -181,15 +181,15 @@ if __name__ == '__main__':
 
     debug = True
 
-
-    # print '##############################################################################################################################################################################'
-    # print 'TEST..... ', 1
-    # compare_methods(collection, ByteHashFamily=8, B=5, R=2, N=10, ByteHashFamiliShingles=6, isHash=None, debug=debug)
-
-    '''print '##############################################################################################################################################################################'
+    '''
+    print '##############################################################################################################################################################################'
+    print 'TEST..... ', 1
+    compare_methods(collection, ByteHashFamily=8, B=2, R=5, N=10, ByteHashFamiliShingles=6, isHash=None, debug=debug)
+    '''
+    print '##############################################################################################################################################################################'
     print 'TEST..... ', 2
-    compare_methods(collection, ByteHashFamily=10, B=5, R=2, N=10, ByteHashFamiliShingles=8, isHash=None, debug=debug)
-
+    compare_methods(collection, ByteHashFamily=10, B=2, R=5, N=10, ByteHashFamiliShingles=8, isHash=None, debug=debug)
+    '''
     print '##############################################################################################################################################################################'
     print 'TEST..... ', 3
     compare_methods(collection, ByteHashFamily=8, B=10, R=1, N=10, ByteHashFamiliShingles=6, isHash=None, debug=debug)
@@ -247,7 +247,7 @@ if __name__ == '__main__':
     print '##############################################################################################################################################################################'
     print 'TEST..... ', 16
     compare_methods(collection, ByteHashFamily=8, B=4, R=20, N=80, ByteHashFamiliShingles=8, isHash=False, debug=debug)
-    '''
+
     print '##############################################################################################################################################################################'
     print 'TEST..... ', 17
-    compare_methods(collection, ByteHashFamily=10, B=10, R=10, N=100, ByteHashFamiliShingles=8, isHash=False, debug=debug)
+    compare_methods(collection, ByteHashFamily=10, B=10, R=10, N=100, ByteHashFamiliShingles=8, isHash=False, debug=debug)'''

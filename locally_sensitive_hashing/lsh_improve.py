@@ -75,6 +75,7 @@ def compareMinHash_improve(signatures, ByteHashFamily, B, R, N, debug=None):
                     # we don't have the k-band, we have to calculate
                     band1 = str(h(str(signature1[k * R:(k + 1) * R])))
                     bs1.append(band1)
+                    band_signatures[docID1] = bs1
 
                 if safe_list_get(bs2, k) != None:
                     # we have yet the k-band
@@ -83,6 +84,7 @@ def compareMinHash_improve(signatures, ByteHashFamily, B, R, N, debug=None):
                     # we don't have the k-band, we have to calculate
                     band2 = str(h(str(signature2[k * R:(k + 1) * R])))
                     bs2.append(band2)
+                    band_signatures[docID2] = bs2
 
                 # after this line we have the two band and we have to compare
                 # if they are equal we can skip to the next pair
