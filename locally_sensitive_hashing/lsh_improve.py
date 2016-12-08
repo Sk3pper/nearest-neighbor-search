@@ -51,6 +51,7 @@ def compareMinHash_improve(signatures, ByteHashFamily, B, R, N, debug=None):
         bs1 = band_signatures.get(docID1)
         if bs1 == None:
             bs1 = []
+
         # For each of the other test documents...
         for j in range(i + 1, numDocs):
             docID2 = j
