@@ -23,7 +23,6 @@ def compareMinHash_improve(signatures, ByteHashFamily, B, R, N, debug=None):
     # Initialize empty list to store the similarity values.
     # 'estJSim' will be for the estimated Jaccard Similarities found by comparing the MinHash signatures.
     estJSim = [0 for x in range(numElems)]
-    Intersection_matrix = [0 for x in range(numElems)]
 
     # qui abbiamo salvato per ogni documento le vaire bande, che ci costruiamo mentre facciamo facciamo
     # girare perche' puo' accadere casi in cui non e' necessario calcolarsi tutte le bande per ogni documento
@@ -145,15 +144,11 @@ def compareMinHash_improve(signatures, ByteHashFamily, B, R, N, debug=None):
         # Record the percentage of positions which matched.
         coord = getTriangleIndex(docID1, docID2, numDocs)
         estJSim[coord] = (float(count) / float(n))
-        Intersection_matrix[coord] = float(count)
 
     elapsed = (time.time() - t0)
     print "\nComparing MinHash signatures took %.2fsec" % elapsed
 
-    result = []
-    result.append(estJSim)
-    result.append(Intersection_matrix)
-    return result
+    return estJSim
 
 
 def safe_list_get(l, idx, default=None):
