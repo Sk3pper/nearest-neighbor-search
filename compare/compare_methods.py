@@ -5,7 +5,7 @@
 import os
 from locally_sensitive_hashing.lsh_improve import compareMinHash_improve
 from minhash_signature.minhash_signature import MinHash
-from nearest_neighbors.nearest_neighbors import J_nearest_neighbors
+from jaccard_implementation.jaccard import jaccard_calculation
 from utils.TriangleIndex import getTriangleIndex
 import json
 from utils.extract_info import extract_string_recipe
@@ -57,7 +57,7 @@ def compare_methods(collection, ByteHashFamily, B, R, N, ByteHashFamiliShingles,
         else:
             print 'file does not exist...'
             # calculate Jaccard similiraty
-            JSim = J_nearest_neighbors(collection, ByteHashFamiliShingles, isHash, True)
+            JSim = jaccard_calculation(collection, ByteHashFamiliShingles, isHash, True)
             print 'Write into file...'
             put_into_file(JSim, numDocs, JRESULTS_HASH)
     else:
@@ -68,7 +68,7 @@ def compare_methods(collection, ByteHashFamily, B, R, N, ByteHashFamiliShingles,
         else:
             print 'file does not exist...'
             # calculate Jaccard similiraty
-            JSim = J_nearest_neighbors(collection, ByteHashFamiliShingles, isHash, True)
+            JSim = jaccard_calculation(collection, ByteHashFamiliShingles, isHash, True)
             print 'Write into file...'
             put_into_file(JSim, numDocs, JRESULTS)
 

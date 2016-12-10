@@ -10,7 +10,7 @@ from minhash_signature.minhash_signature import getCollectionShingles
 from utils.TriangleIndex import getTriangleIndex
 
 
-def J_nearest_neighbors(collection, ByteHashFamiliShingles, isHash, debug=None):
+def jaccard_calculation(collection, ByteHashFamiliShingles, isHash, debug=None):
 
     numDocs = len(collection)
     if debug:
