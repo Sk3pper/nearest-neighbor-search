@@ -9,9 +9,6 @@ from utils.hashFamily import hashFamily
 
 def compareMinHash_improve(signatures, ByteHashFamily, B, R, N, debug=None):
     numDocs = len(signatures)
-
-    print 'B: ', B
-    print 'R: ', R
     if debug:
         print "numDocs: " + str(numDocs)
     # Calculate the number of elements needed in our triangle matrix

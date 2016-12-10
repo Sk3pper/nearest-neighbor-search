@@ -5,13 +5,9 @@ import binascii
 from utils.hashFamily import hashFamily
 
 
-#  print_= None serve per debug purpose
-def shingling(document, k, ByteHashFamiliShingles, isSet=None, isHash=None, print_=None):
-    # prima facciamo le "tegole"
-    shingles = [document[i:i + k] for i in range(len(document) - k + 1)]
+def shingling(document, k, ByteHashFamiliShingles, isHash=None, print_=None):
 
-    if isSet:
-        shingles = set(shingles)
+    shingles = [document[i:i + k] for i in range(len(document) - k + 1)]
 
     if print_:
         print shingles
@@ -21,12 +17,8 @@ def shingling(document, k, ByteHashFamiliShingles, isSet=None, isHash=None, prin
         hash_shingles = []
         for s in shingles:
             hash_shingles.append(hash(s))
-
-        if isSet:
-            return set(hash_shingles)
+        return set(hash_shingles)
 
         return hash_shingles
-    return shingles
 
-if __name__ == '__main__':
-    shingling("ciao come va", 4, None, True  )
+    return set(shingles)

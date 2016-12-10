@@ -15,9 +15,10 @@ def hashFamily(i, resultSize):
 
     return hashMember
 
-
-# how to use:
-h = hashFamily(1, 10)
-print h('corate wit')
+    '''
+    # how to use:
+    h = hashFamily(1, 10)
+    print h('corate wit')
+    '''
 
 

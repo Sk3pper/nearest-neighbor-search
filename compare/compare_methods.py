@@ -9,7 +9,6 @@ from nearest_neighbors.nearest_neighbors import J_nearest_neighbors
 from utils.TriangleIndex import getTriangleIndex
 import json
 from utils.extract_info import extract_string_recipe
-from utils.log_calculate import log_dict
 
 THRESHOLD = 0.8
 JRESULTS = 'j_results.txt'
@@ -23,17 +22,18 @@ def read_list(name, numb):
     with open(os.path.join(os.pardir, dir, name)) as jres:
         in_file = jres.read()
 
-    for line in in_file.split('\n'):
-        # print 'line',line
+    for line in in_file.split('\n')[:-1]:
+
         ids = line.split("\t")[0]
         j = line.split("\t")[1]
         if int(ids.split('-->')[0]) < numb and int(ids.split('-->')[1]) < numb:
             JSim[getTriangleIndex(int(ids.split('-->')[0]), int(ids.split('-->')[1]), numb)] = float(j)
+            # print float(j)
     return JSim
 
 def put_into_file(content, numDocs, name):
     # save into the file
-    out_file = open(name, "w")
+    out_file = open(dir+name, "w")
     for i in range(0, numDocs):
         for j in range(i + 1, numDocs):
             coordinate = getTriangleIndex(i, j, numDocs)
@@ -57,8 +57,7 @@ def compare_methods(collection, ByteHashFamily, B, R, N, ByteHashFamiliShingles,
             JSim = read_list(JRESULTS_HASH, len(collection))
         else:
             print 'file does not exist...'
-            JResult = J_nearest_neighbors(collection, ByteHashFamiliShingles, isHash, True)
-            JSim = JResult[0]  # [0 for x in range(int(len(collection) * (len(collection) - 1) / 2))]
+            JSim = J_nearest_neighbors(collection, ByteHashFamiliShingles, isHash, True)
             print 'Write into file...'
             put_into_file(JSim, numDocs, JRESULTS_HASH)
     else:
@@ -69,7 +68,7 @@ def compare_methods(collection, ByteHashFamily, B, R, N, ByteHashFamiliShingles,
             print 'file does not exist...'
             JSim = J_nearest_neighbors(collection, ByteHashFamiliShingles, isHash, True)
             print 'Write into file...'
-            put_into_file(JSim, numDocs, JRESULTS_HASH)
+            put_into_file(JSim, numDocs, JRESULTS)
 
 
 
@@ -129,7 +128,7 @@ def compare_methods(collection, ByteHashFamily, B, R, N, ByteHashFamiliShingles,
 
             print "%5s --> %5s   %.2f   %.2f" % (doc1, doc2, jvalue,estjvalue)
             count = count + 1
-
+    print '[INTERSECTION] document founded: ' + str(count)
 
 if __name__ == '__main__':
     # OSS: la collection deve essere nel formato collection[docID] = documento
@@ -158,51 +157,65 @@ if __name__ == '__main__':
         i += 1
 
     print 'read ' + str(len(collection)) + ' recipes from .json'
-    min_coll = {}
+    debug = False
 
-    '''for i in range(0, 1000):
-        min_coll[i] = collection[i]
-        # print min_coll[i]
-    print 'Compare two methods...'
-    compare_methods(min_coll, True)'''
-
-    debug = True
-
+    # b,r >> T
     # NO HASH SHINGLE
     print '##############################################################################################################################################################################'
     print 'TEST..... ', 1
-    compare_methods(collection, ByteHashFamily=8, B=2, R=5, N=10, ByteHashFamiliShingles=6, isHash=False, debug=debug)
+    compare_methods(collection, ByteHashFamily=8, B=2, R=4, N=8, ByteHashFamiliShingles=8, isHash=False, debug=debug)
 
     print '##############################################################################################################################################################################'
     print 'TEST..... ', 2
-    compare_methods(collection, ByteHashFamily=10, B=2, R=5, N=10, ByteHashFamiliShingles=8, isHash=False, debug=debug)
-
+    compare_methods(collection, ByteHashFamily=8, B=2, R=5, N=10, ByteHashFamiliShingles=6, isHash=False, debug=debug)
 
     print '##############################################################################################################################################################################'
     print 'TEST..... ', 3
-    compare_methods(collection, ByteHashFamily=8, B=3, R=4, N=12, ByteHashFamiliShingles=6, isHash=False, debug=debug)
-
+    compare_methods(collection, ByteHashFamily=8, B=3, R=7, N=21, ByteHashFamiliShingles=8, isHash=False, debug=debug)
     print '##############################################################################################################################################################################'
     print 'TEST..... ', 4
-    compare_methods(collection, ByteHashFamily=10, B=3, R=4, N=12, ByteHashFamiliShingles=8, isHash=False, debug=debug)
+    compare_methods(collection, ByteHashFamily=8, B=4, R=7, N=28, ByteHashFamiliShingles=6, isHash=False, debug=debug)
 
-
-
-    # with HASH SHINGLE
     print '##############################################################################################################################################################################'
     print 'TEST..... ', 5
-    compare_methods(collection, ByteHashFamily=8, B=2, R=5, N=10, ByteHashFamiliShingles=6, isHash=True, debug=debug)
+    compare_methods(collection, ByteHashFamily=8, B=5, R=7, N=35, ByteHashFamiliShingles=6, isHash=False, debug=debug)
 
     print '##############################################################################################################################################################################'
     print 'TEST..... ', 6
-    compare_methods(collection, ByteHashFamily=10, B=2, R=5, N=10, ByteHashFamiliShingles=8, isHash=True, debug=debug)
+    compare_methods(collection, ByteHashFamily=8, B=10, R=10, N=100, ByteHashFamiliShingles=6, isHash=False, debug=debug)
 
 
+
+    #    with HASH SHINGLE
     print '##############################################################################################################################################################################'
     print 'TEST..... ', 7
-    compare_methods(collection, ByteHashFamily=8, B=3, R=4, N=12, ByteHashFamiliShingles=6, isHash=True, debug=debug)
+    compare_methods(collection, ByteHashFamily=8, B=2, R=4, N=8, ByteHashFamiliShingles=8, isHash=True, debug=debug)
 
     print '##############################################################################################################################################################################'
     print 'TEST..... ', 8
-    compare_methods(collection, ByteHashFamily=10, B=3, R=4, N=12, ByteHashFamiliShingles=8, isHash=True, debug=debug)
+    compare_methods(collection, ByteHashFamily=8, B=2, R=5, N=10, ByteHashFamiliShingles=6, isHash=True, debug=debug)
 
+    print '##############################################################################################################################################################################'
+    print 'TEST..... ', 9
+    compare_methods(collection, ByteHashFamily=8, B=3, R=7, N=21, ByteHashFamiliShingles=6, isHash=True, debug=debug)
+
+    print '##############################################################################################################################################################################'
+    print 'TEST..... ', 10
+    compare_methods(collection, ByteHashFamily=8, B=4, R=7, N=28, ByteHashFamiliShingles=8, isHash=True, debug=debug)
+
+    print '##############################################################################################################################################################################'
+    print 'TEST..... ', 11
+    compare_methods(collection, ByteHashFamily=8, B=10, R=10, N=100, ByteHashFamiliShingles=6, isHash=True, debug=debug)
+
+    # b,r << T
+    print '##############################################################################################################################################################################'
+    print 'TEST..... ', 12
+    compare_methods(collection, ByteHashFamily=8, B=5, R=2, N=10, ByteHashFamiliShingles=8, isHash=False, debug=debug)
+
+    print '##############################################################################################################################################################################'
+    print 'TEST..... ', 13
+    compare_methods(collection, ByteHashFamily=8, B=7, R=3, N=21, ByteHashFamiliShingles=6, isHash=False, debug=debug)
+
+    print '##############################################################################################################################################################################'
+    print 'TEST..... ', 14
+    compare_methods(collection, ByteHashFamily=8, B=10, R=4, N=40, ByteHashFamiliShingles=6, isHash=False, debug=debug)
