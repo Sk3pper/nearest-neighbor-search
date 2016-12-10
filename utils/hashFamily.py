@@ -8,17 +8,8 @@ def hashFamily(i, resultSize):
     salt = str(i).zfill(maxLen)[-maxLen:]
 
     def hashMember(x):
-        # oss: facendo .digest() ritorna '\xbbd\x9c\x83\xdd\x1e\xa5\xc9\xd9\xde\xc9\xa1\x8d\xf0\xff\xe9'
-        #      se facciamo .hexdigest() ritorna 'a4337bc45a8fc544c03f52dc550cd6e1e87021bc896588bd79e901e2'
-        # ritorniamo un intero perche' con digest/hexdigest non funziona nulla
+        # oss: .digest() returns '\xbbd\x9c\x83\xdd\x1e\xa5\xc9\xd9\xde\xc9\xa1\x8d\xf0\xff\xe9'
+        #      .hexdigest() returns 'a4337bc45a8fc544c03f52dc550cd6e1e87021bc896588bd79e901e2'
         return int(hashlib.sha1(x + salt).hexdigest()[-resultSize:], 16)
 
     return hashMember
-
-    '''
-    # how to use:
-    h = hashFamily(1, 10)
-    print h('corate wit')
-    '''
-
-

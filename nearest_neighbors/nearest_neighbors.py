@@ -2,11 +2,8 @@
 #                 Calculate Jaccard Similarities
 # =============================================================================
 # In this section, we will directly calculate the Jaccard similarities by
-# comparing the sets. This is included here to show how much slower it is than
-# the MinHash approach.
+# comparing the sets.
 
-# Calculating the Jaccard similarities gets really slow for large numbers
-# of documents.
 import time
 
 from minhash_signature.minhash_signature import getCollectionShingles
@@ -50,7 +47,6 @@ def J_nearest_neighbors(collection, ByteHashFamiliShingles, isHash, debug=None):
         for j in range(i + 1, numDocs):
             # Retrieve the set of shingles for document j.
             s2 = shingles_collection[j]
-            # print 's2: ' + str(len(s1))+'\n'
             # Calculate and store the actual Jaccard similarity.
             coordinate = getTriangleIndex(i, j, numDocs)
             inter = float(len(s1.intersection(s2)))

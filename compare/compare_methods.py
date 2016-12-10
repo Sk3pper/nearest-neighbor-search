@@ -28,7 +28,6 @@ def read_list(name, numb):
         j = line.split("\t")[1]
         if int(ids.split('-->')[0]) < numb and int(ids.split('-->')[1]) < numb:
             JSim[getTriangleIndex(int(ids.split('-->')[0]), int(ids.split('-->')[1]), numb)] = float(j)
-            # print float(j)
     return JSim
 
 def put_into_file(content, numDocs, name):
@@ -39,7 +38,6 @@ def put_into_file(content, numDocs, name):
             coordinate = getTriangleIndex(i, j, numDocs)
             J = content[coordinate]
             if J >= THRESHOLD:
-                # 98-->9720	0.53
                 s = str(i)+'-->'+str(j)+'\t'+str(J)
                 out_file.write(s + '\n')
     out_file.close()
@@ -53,19 +51,23 @@ def compare_methods(collection, ByteHashFamily, B, R, N, ByteHashFamiliShingles,
     print "\nCalculating JSim..."
     if isHash:
         if os.path.isfile(dir + JRESULTS_HASH):
+            # read results from file
             print 'file {} exists'.format(JRESULTS_HASH)
             JSim = read_list(JRESULTS_HASH, len(collection))
         else:
             print 'file does not exist...'
+            # calculate Jaccard similiraty
             JSim = J_nearest_neighbors(collection, ByteHashFamiliShingles, isHash, True)
             print 'Write into file...'
             put_into_file(JSim, numDocs, JRESULTS_HASH)
     else:
         if os.path.isfile(dir + JRESULTS):
+            # read results from file
             print 'file {} exists'.format(JRESULTS)
             JSim = read_list(JRESULTS, len(collection))
         else:
             print 'file does not exist...'
+            # calculate Jaccard similiraty
             JSim = J_nearest_neighbors(collection, ByteHashFamiliShingles, isHash, True)
             print 'Write into file...'
             put_into_file(JSim, numDocs, JRESULTS)
@@ -73,7 +75,9 @@ def compare_methods(collection, ByteHashFamily, B, R, N, ByteHashFamiliShingles,
 
 
     print "\nCalculating estJSim..."
+    # calculate min hash for each documents
     signatures = MinHash(collection, ByteHashFamily, N, ByteHashFamiliShingles, isHash, True)
+    # calculate lsh
     estJSim = compareMinHash_improve(signatures, ByteHashFamily, B, R, N, True)
 
     print "\nList of Document Pairs with J(d1,d2) more than", THRESHOLD
@@ -124,21 +128,11 @@ def compare_methods(collection, ByteHashFamily, B, R, N, ByteHashFamiliShingles,
             # Retrieve the estimated similarity value for this pair.
             jvalue = JSim[getTriangleIndex(doc1, doc2, numDocs)]
             estjvalue= estJSim[getTriangleIndex(doc1, doc2, numDocs)]
-            # If the similarity is above the threshold...
-
             print "%5s --> %5s   %.2f   %.2f" % (doc1, doc2, jvalue,estjvalue)
             count = count + 1
     print '[INTERSECTION] document founded: ' + str(count)
 
 if __name__ == '__main__':
-    # OSS: la collection deve essere nel formato collection[docID] = documento
-    #      - dove docID e' l'ID del documento che nel caso delle nostre ricette e' un numero e manteniamo
-    #        il mapping con il nome vero e proprio. L'id come numero ci aiuta dopo quando facciamo
-    #        la matrice dove ci salviamo i risultati
-    #      - documento: e' una stringa contenente il contenuto del documento
-
-    # You can run this code for different portions of the dataset.
-    # It ships with data set sizes 100, 1000, 2500, and 10000.
     dataFile = "recipes.json"
 
     print 'Load JSON...'
@@ -183,8 +177,6 @@ if __name__ == '__main__':
     print '##############################################################################################################################################################################'
     print 'TEST..... ', 6
     compare_methods(collection, ByteHashFamily=8, B=10, R=10, N=100, ByteHashFamiliShingles=6, isHash=False, debug=debug)
-
-
 
     #    with HASH SHINGLE
     print '##############################################################################################################################################################################'

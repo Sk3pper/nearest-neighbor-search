@@ -1,9 +1,6 @@
-# Implement a class that, given a document, creates its set of character shingles of some length k.
-# Then represent the document as the set of the hashes of the shingles, for some hash function.
 import binascii
 
 from utils.hashFamily import hashFamily
-
 
 def shingling(document, k, ByteHashFamiliShingles, isHash=None, print_=None):
 

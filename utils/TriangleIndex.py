@@ -22,12 +22,6 @@ def getTriangleIndex(i, j, numDocs):
         i = j
         j = temp
 
-    # Calculate the index within the triangular array.
-    # This fancy indexing scheme is taken from pg. 211 of:
-    # http://infolab.stanford.edu/~ullman/mmds/ch6.pdf
-    # But I adapted it for a 0-based index.
-    # Note: The division by two should not truncate, it
-    #       needs to be a float.
     k = int(i * (numDocs - (i + 1) / 2.0) + j - i) - 1
 
     return k

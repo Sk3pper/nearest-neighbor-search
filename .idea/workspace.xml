@@ -2,23 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b2c40b6-6988-4a00-b9e7-65a1aa4f14ce" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/compare/j_results_hash.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/compare/prova.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/locally_sensitive_hashing/lsh.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nearest_neighbors/nearest_neighbors_multith.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nearest_neighbors/nearest_neighbors_multith_thread_pool.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/result_test/compare_with_giacomo.rtf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/result_test/result_tests.rtf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/result_test/result_tests_cleaned copia.rtf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/result_test/result_tests_cleaned.rtf" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MinHash/runMinHashExample.py" afterPath="$PROJECT_DIR$/../MinHash/runMinHashExample.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../bbc-recipes-search-engine/search_engine/corpus_builder.py" afterPath="$PROJECT_DIR$/../bbc-recipes-search-engine/search_engine/corpus_builder.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compare/compare_methods.py" afterPath="$PROJECT_DIR$/compare/compare_methods.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/locally_sensitive_hashing/lsh_improve.py" afterPath="$PROJECT_DIR$/locally_sensitive_hashing/lsh_improve.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minhash_signature/minhash_signature.py" afterPath="$PROJECT_DIR$/minhash_signature/minhash_signature.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nearest_neighbors/nearest_neighbors.py" afterPath="$PROJECT_DIR$/nearest_neighbors/nearest_neighbors.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shingling/shingling.py" afterPath="$PROJECT_DIR$/shingling/shingling.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/extract_info.py" afterPath="$PROJECT_DIR$/utils/extract_info.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/TriangleIndex.py" afterPath="$PROJECT_DIR$/utils/TriangleIndex.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/hashFamily.py" afterPath="$PROJECT_DIR$/utils/hashFamily.py" />
     </list>
     <ignored path="nearest-neighbor-search.iws" />
@@ -34,7 +26,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/nearest-neighbor-search$minhash_signature.coverage" NAME="minhash_signature Coverage Results" MODIFIED="1481279056105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minhash_signature" />
     <SUITE FILE_PATH="coverage/nearest-neighbor-search$reduce_crime_tsv.coverage" NAME="reduce_crime_tsv Coverage Results" MODIFIED="1480602784433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Google Drive/Universita/Universita_2016-2017(V anno)/I semestre/1)Data Mining/Tutorials/Python_Script" />
-    <SUITE FILE_PATH="coverage/nearest-neighbor-search$compare_methods.coverage" NAME="compare_methods Coverage Results" MODIFIED="1481366397753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/compare" />
+    <SUITE FILE_PATH="coverage/nearest-neighbor-search$compare_methods.coverage" NAME="compare_methods Coverage Results" MODIFIED="1481374674304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/compare" />
     <SUITE FILE_PATH="coverage/nearest-neighbor-search$hashFamily.coverage" NAME="hashFamily Coverage Results" MODIFIED="1481130290729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/nearest-neighbor-search$runMinHashExample.coverage" NAME="runMinHashExample Coverage Results" MODIFIED="1480260316383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../MinHash" />
     <SUITE FILE_PATH="coverage/nearest-neighbor-search$prova.coverage" NAME="prova Coverage Results" MODIFIED="1481139258468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/compare" />
@@ -55,12 +47,84 @@
       <file leaf-file-name="compare_methods.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/compare/compare_methods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2302">
-              <caret line="203" column="64" selection-start-line="203" selection-start-column="64" selection-end-line="203" selection-end-column="64" />
+            <state relative-caret-position="-1898">
+              <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
               <folding>
                 <element signature="e#211#220#0" expanded="true" />
-                <element signature="e#718#1200#0" expanded="false" />
-                <element signature="e#1249#1647#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hashFamily.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/hashFamily.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TriangleIndex.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/TriangleIndex.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="unicode_ascii_decoder.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/unicode_ascii_decoder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="67">
+              <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="write_file.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/write_file.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lsh_improve.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/locally_sensitive_hashing/lsh_improve.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="502">
+              <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="extract_info.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/extract_info.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nearest_neighbors.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nearest_neighbors/nearest_neighbors.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="577">
+              <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+              <folding>
+                <element signature="e#306#317#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,8 +133,8 @@
       <file leaf-file-name="minhash_signature.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/minhash_signature/minhash_signature.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+            <state relative-caret-position="645">
+              <caret line="77" column="21" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="21" />
               <folding>
                 <element signature="e#206#219#0" expanded="true" />
               </folding>
@@ -78,14 +142,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lsh_improve.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/locally_sensitive_hashing/lsh_improve.py">
+      <file leaf-file-name="shingling.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shingling/shingling.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-345">
+            <state relative-caret-position="15">
               <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding>
-                <element signature="e#228#239#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,7 +172,6 @@
         <option value="$PROJECT_DIR$/minhash/minhash.py" />
         <option value="$PROJECT_DIR$/../bbc-recipes-search-engine/utils/data_structures.py" />
         <option value="$PROJECT_DIR$/minwise_hashing/minhash.py" />
-        <option value="$PROJECT_DIR$/utils/TriangleIndex.py" />
         <option value="$PROJECT_DIR$/nearest_neighbors.py" />
         <option value="$PROJECT_DIR$/compare/compare_method.py" />
         <option value="$PROJECT_DIR$/../MinHash/runMinHashExample.py" />
@@ -128,15 +189,16 @@
         <option value="$PROJECT_DIR$/compare/prova.py" />
         <option value="$PROJECT_DIR$/data/j_results_hash.txt" />
         <option value="$PROJECT_DIR$/compare/j_results_hash.txt" />
-        <option value="$PROJECT_DIR$/nearest_neighbors/nearest_neighbors.py" />
         <option value="$PROJECT_DIR$/data/j_results.txt" />
         <option value="$PROJECT_DIR$/result_test/j_results_hash.txt" />
         <option value="$PROJECT_DIR$/result_test/j_results.txt" />
-        <option value="$PROJECT_DIR$/locally_sensitive_hashing/lsh_improve.py" />
         <option value="$PROJECT_DIR$/utils/extract_info.py" />
-        <option value="$PROJECT_DIR$/utils/hashFamily.py" />
+        <option value="$PROJECT_DIR$/locally_sensitive_hashing/lsh_improve.py" />
+        <option value="$PROJECT_DIR$/nearest_neighbors/nearest_neighbors.py" />
         <option value="$PROJECT_DIR$/minhash_signature/minhash_signature.py" />
         <option value="$PROJECT_DIR$/shingling/shingling.py" />
+        <option value="$PROJECT_DIR$/utils/hashFamily.py" />
+        <option value="$PROJECT_DIR$/utils/TriangleIndex.py" />
         <option value="$PROJECT_DIR$/compare/compare_methods.py" />
       </list>
     </option>
@@ -671,26 +733,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27896994" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2825465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6012048" sideWeight="0.52575105" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7566265" sideWeight="0.47424892" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39643347" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6698795" sideWeight="0.47424892" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39643347" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -765,11 +827,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/recipes_old.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/recipes_old.json" />
     <entry file="file://$PROJECT_DIR$/data/JSim.txt" />
     <entry file="file://$PROJECT_DIR$/data/estJSim.txt" />
     <entry file="file://$USER_HOME$/Google Drive/Universita/Universita_2016-2017(V anno)/I semestre/1)Data Mining/Tutorials/Python_Script/Icon&#13;">
@@ -812,13 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-480">
           <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="62" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/write_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -874,34 +925,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result_test/ris-05-11-16.rtf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2708">
-          <caret line="148" column="41" selection-start-line="148" selection-start-column="32" selection-end-line="148" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result_test/ris-06-11-16.rtf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1985">
-          <caret line="146" column="39" selection-start-line="146" selection-start-column="31" selection-end-line="146" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result_test/result_4-11-16.rtf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/TriangleIndex.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/result_test/ris-05-11-16.rtf" />
+    <entry file="file://$PROJECT_DIR$/result_test/ris-06-11-16.rtf" />
+    <entry file="file://$PROJECT_DIR$/result_test/result_4-11-16.rtf" />
     <entry file="file://$PROJECT_DIR$/../bbc-recipes-search-engine/crawler/bbc_scraper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -909,20 +935,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nearest_neighbors/nearest_neighbors_multith.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-191">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nearest_neighbors/nearest_neighbors_multith_thread_pool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="45" column="78" selection-start-line="45" selection-start-column="78" selection-end-line="45" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/nearest_neighbors/nearest_neighbors_multith.py" />
+    <entry file="file://$PROJECT_DIR$/nearest_neighbors/nearest_neighbors_multith_thread_pool.py" />
     <entry file="file://$PROJECT_DIR$/../bbc-recipes-search-engine/search_engine/corpus_builder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -930,13 +944,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/locally_sensitive_hashing/lsh.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/locally_sensitive_hashing/lsh.py" />
     <entry file="file://$PROJECT_DIR$/../bbc-recipes-search-engine/utils/utility_functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -951,13 +959,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compare/prova.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/compare/prova.py" />
     <entry file="file://$PROJECT_DIR$/compare/j_results_hash.txt" />
     <entry file="file://$PROJECT_DIR$/data/j_results.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -973,18 +975,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/extract_info.py">
+    <entry file="file://$PROJECT_DIR$/utils/log_calculate.py" />
+    <entry file="file://$PROJECT_DIR$/result_test/j_results.txt" />
+    <entry file="file://$PROJECT_DIR$/result_test/j_results_higher.txt" />
+    <entry file="file://$PROJECT_DIR$/result_test/j_results_hash.txt" />
+    <entry file="file://$PROJECT_DIR$/locally_sensitive_hashing/lsh_improve.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nearest_neighbors/nearest_neighbors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+          <folding>
+            <element signature="e#306#317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/minhash_signature/minhash_signature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="77" column="21" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="21" />
+          <folding>
+            <element signature="e#206#219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shingling/shingling.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/log_calculate.py">
+    <entry file="file://$PROJECT_DIR$/utils/extract_info.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="465">
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/hashFamily.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/TriangleIndex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -997,84 +1049,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/hashFamily.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result_test/j_results.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result_test/j_results_higher.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result_test/j_results_hash.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shingling/shingling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#196#211#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nearest_neighbors/nearest_neighbors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/minhash_signature/minhash_signature.py">
+    <entry file="file://$PROJECT_DIR$/utils/write_file.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="e#206#219#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/locally_sensitive_hashing/lsh_improve.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-345">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#228#239#0" expanded="true" />
-          </folding>
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/compare/compare_methods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2302">
-          <caret line="203" column="64" selection-start-line="203" selection-start-column="64" selection-end-line="203" selection-end-column="64" />
+        <state relative-caret-position="-1898">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
           <folding>
             <element signature="e#211#220#0" expanded="true" />
-            <element signature="e#718#1200#0" expanded="false" />
-            <element signature="e#1249#1647#0" expanded="false" />
           </folding>
         </state>
       </provider>

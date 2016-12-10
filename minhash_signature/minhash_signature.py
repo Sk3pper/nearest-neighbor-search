@@ -10,28 +10,22 @@ from utils.hashFamily import hashFamily
 # K-shingles
 K = 10
 
-
-# number of random hash functions apply to perform signature
-# data la collezione, la collezione divisa per shingles, e le random_hash
-# ritorna la collezione di signature
 def MinHash(collection, ByteHashFamily, N, ByteHashFamiliShingles, isHash, debug=None):
     print "Shingling articles..."
     t0 = time.time()
 
     shingles_collection = getCollectionShingles(collection, ByteHashFamiliShingles, isHash)
-    # print 'Esempio di shingling del documento 0: ' + str(shingles_collection[shingles_collection.keys()[0]])
-    # Report how long shingling took.
     print '\nShingling ' + str(len(collection)) + ' docs took %.2f sec.' % (time.time() - t0)
 
 
     print '\nGenerating random hash functions...'
-    n = N  # log_dict(collection)
+    n = N
     hash_funcs = random_hash(n, ByteHashFamily)
 
     print '\nGenerating MinHash signatures for all documents...'
     signatures = {}
     t0 = time.time()
-    # oss: collection ed shingles_collection ed signatures con la stessa chiave si riferisce allo stesso oggetto
+
     for docID in range(0, len(collection)):
         # Get the shingle set of shingles for this document.
         shingles = shingles_collection[docID]
@@ -75,13 +69,7 @@ def random_hash(num_hashes, ByteHashFamily, debug=None):
     # print random_numb
     return hash_funcs
 
-
-# data la collezione di documenti, per ogni documento faccio partire shingling(document, k, i, print_= None)
-# NB = per collezione intendo un dizionario dove il DOC_ID e' la chiave per prendere la stringa del documento associato
-# poi fa tutto shingling che legge come una stringa
-# ritorna un dizionario di liste, dove ogni lista e' un documento rappresentato con le shingle
 def getCollectionShingles(collection, ByteHashFamiliShingles, isHash, debug=None):
-    # print 'K = ' + str(K)
     shingles_collection = {}
     totalShingles = 0
     if debug:
