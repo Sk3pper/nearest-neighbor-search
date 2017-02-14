@@ -3,5 +3,10 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../MinHash" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../streaming-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../streaming-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../tweemportance-analyzer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../tweemportance-analyzer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../tweemportance-analyzer" vcs="Git" />
   </component>
 </project>

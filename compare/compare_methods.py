@@ -197,17 +197,21 @@ if __name__ == '__main__':
 
     print '##############################################################################################################################################################################'
     print 'TEST..... ', 11
+    compare_methods(collection, ByteHashFamily=8, B=5, R=7, N=35, ByteHashFamiliShingles=6, isHash=True, debug=debug)
+
+    print '##############################################################################################################################################################################'
+    print 'TEST..... ', 12
     compare_methods(collection, ByteHashFamily=8, B=10, R=10, N=100, ByteHashFamiliShingles=6, isHash=True, debug=debug)
 
     # b,r << T
     print '##############################################################################################################################################################################'
-    print 'TEST..... ', 12
+    print 'TEST..... ', 13
     compare_methods(collection, ByteHashFamily=8, B=5, R=2, N=10, ByteHashFamiliShingles=8, isHash=False, debug=debug)
 
     print '##############################################################################################################################################################################'
-    print 'TEST..... ', 13
+    print 'TEST..... ', 14
     compare_methods(collection, ByteHashFamily=8, B=7, R=3, N=21, ByteHashFamiliShingles=6, isHash=False, debug=debug)
 
     print '##############################################################################################################################################################################'
-    print 'TEST..... ', 14
+    print 'TEST..... ', 15
     compare_methods(collection, ByteHashFamily=8, B=10, R=4, N=40, ByteHashFamiliShingles=6, isHash=False, debug=debug)

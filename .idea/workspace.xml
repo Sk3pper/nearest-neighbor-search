@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b2c40b6-6988-4a00-b9e7-65a1aa4f14ce" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nearest_neighbors/__init__.py" afterPath="$PROJECT_DIR$/jaccard_implementation/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nearest_neighbors/nearest_neighbors.py" afterPath="$PROJECT_DIR$/jaccard_implementation/jaccard.py" />
+    <list default="true" id="4b2c40b6-6988-4a00-b9e7-65a1aa4f14ce" name="Default" comment="quasi finito">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../streaming-algorithm/count_rigth_second_moment.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../streaming-algorithm/count_unique_values.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../streaming-algorithm/distinct_values.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../streaming-algorithm/second_moment.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../streaming-algorithm/alon_matias_szegedy.py" afterPath="$PROJECT_DIR$/../streaming-algorithm/ams.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../streaming-algorithm/flajolet_martin.py" afterPath="$PROJECT_DIR$/../streaming-algorithm/fm.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MinHash/runMinHashExample.py" afterPath="$PROJECT_DIR$/../MinHash/runMinHashExample.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../bbc-recipes-search-engine/search_engine/corpus_builder.py" afterPath="$PROJECT_DIR$/../bbc-recipes-search-engine/search_engine/corpus_builder.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/nearest-neighbor-search.iml" afterPath="$PROJECT_DIR$/.idea/nearest-neighbor-search.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compare/compare_methods.py" afterPath="$PROJECT_DIR$/compare/compare_methods.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../streaming-algorithm/main.py" afterPath="$PROJECT_DIR$/../streaming-algorithm/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../streaming-algorithm/twitter_stream/stream.py" afterPath="$PROJECT_DIR$/../streaming-algorithm/twitter_stream/stream.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../streaming-algorithm/utils/print_statistic.py" afterPath="$PROJECT_DIR$/../streaming-algorithm/utils/print_statistic.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../tweemportance-analyzer/twitter_data_retrieve/twitter_data_retriever.py" afterPath="$PROJECT_DIR$/../tweemportance-analyzer/twitter_data_retrieve/twitter_data_retriever.py" />
     </list>
     <ignored path="nearest-neighbor-search.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,8 +33,10 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/nearest-neighbor-search$minhash_signature.coverage" NAME="minhash_signature Coverage Results" MODIFIED="1481279056105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minhash_signature" />
+    <SUITE FILE_PATH="coverage/nearest-neighbor-search$main.coverage" NAME="main Coverage Results" MODIFIED="1482073185005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Google Drive/Insegmaneto 2016-2017/tecnica di programmazione 2016-2017/Programma_biennio/DiarioLezioni/IA/Verifiche/II Verifica" />
     <SUITE FILE_PATH="coverage/nearest-neighbor-search$reduce_crime_tsv.coverage" NAME="reduce_crime_tsv Coverage Results" MODIFIED="1480602784433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Google Drive/Universita/Universita_2016-2017(V anno)/I semestre/1)Data Mining/Tutorials/Python_Script" />
     <SUITE FILE_PATH="coverage/nearest-neighbor-search$compare_methods.coverage" NAME="compare_methods Coverage Results" MODIFIED="1481385830842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/compare" />
+    <SUITE FILE_PATH="coverage/nearest-neighbor-search$twitter_data_retriever.coverage" NAME="twitter_data_retriever Coverage Results" MODIFIED="1486914956001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../tweemportance-analyzer/twitter_data_retrieve" />
     <SUITE FILE_PATH="coverage/nearest-neighbor-search$hashFamily.coverage" NAME="hashFamily Coverage Results" MODIFIED="1481130290729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/nearest-neighbor-search$runMinHashExample.coverage" NAME="runMinHashExample Coverage Results" MODIFIED="1480260316383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../MinHash" />
     <SUITE FILE_PATH="coverage/nearest-neighbor-search$prova.coverage" NAME="prova Coverage Results" MODIFIED="1481139258468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/compare" />
@@ -40,107 +54,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="compare_methods.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/compare/compare_methods.py">
+      <file leaf-file-name="twitter_data_retriever.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/twitter_data_retrieve/twitter_data_retriever.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hashFamily.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/hashFamily.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TriangleIndex.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/TriangleIndex.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="unicode_ascii_decoder.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/unicode_ascii_decoder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="write_file.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/write_file.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lsh_improve.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/locally_sensitive_hashing/lsh_improve.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
+            <state relative-caret-position="252">
+              <caret line="326" column="4" lean-forward="false" selection-start-line="326" selection-start-column="4" selection-end-line="326" selection-end-column="4" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#1880#4038#0" expanded="false" />
+                <element signature="e#5663#6407#0" expanded="false" />
+                <element signature="e#6657#7612#0" expanded="false" />
+                <element signature="e#12159#12448#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="extract_info.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/extract_info.py">
+      <file leaf-file-name="people_visited.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people_visited.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jaccard.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jaccard_implementation/jaccard.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-              <folding>
-                <element signature="e#306#317#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="minhash_signature.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/minhash_signature/minhash_signature.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="77" column="21" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="21" />
-              <folding>
-                <element signature="e#206#219#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shingling.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shingling/shingling.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="-10218">
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -155,46 +89,98 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>count_cluster0</find>
+      <find>purity_score</find>
+      <find>frequency_statistic</find>
+      <find>num_hashes</find>
+      <find>ams_num_hashes</find>
+      <find>f0</find>
+      <find>tweet_count</find>
+      <find>Test</find>
+      <find>TEST.....</find>
+      <find>tweet_count, 10000</find>
+      <find>compute_tail_len</find>
+      <find>a_d_cavallo</find>
+      <find>&lt;------Tweets retrieved:</find>
+      <find>gain in 16 minutes</find>
+      <find>People so far visited</find>
+      <find>time</find>
+      <find>TWEETS_DIRECTORY</find>
+      <find>provo con (</find>
+      <find>maximize_target_outcome</find>
+      <find>translate</find>
+      <find>ore removing</find>
+      <find>provo con (ac</find>
+      <find>tr</find>
+      <find>pernondimenticare</find>
+      <find>NUM_TWEETS</find>
+      <find>is true</find>
+      <find>omo</find>
+      <find>cartab</find>
+      <find>homogeneity</find>
+      <find>hashtags_list</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../tweemportance-analyzer" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/prova.py" />
-        <option value="$PROJECT_DIR$/minhash/minhash.py" />
-        <option value="$PROJECT_DIR$/../bbc-recipes-search-engine/utils/data_structures.py" />
-        <option value="$PROJECT_DIR$/minwise_hashing/minhash.py" />
-        <option value="$PROJECT_DIR$/nearest_neighbors.py" />
-        <option value="$PROJECT_DIR$/compare/compare_method.py" />
-        <option value="$PROJECT_DIR$/../MinHash/runMinHashExample.py" />
-        <option value="$PROJECT_DIR$/nearest_neighbors/nearest_neighbors_multith.py" />
-        <option value="$PROJECT_DIR$/nearest_neighbors/nearest_neighbors_multith_thread_pool.py" />
-        <option value="$PROJECT_DIR$/compare/minhash.py" />
-        <option value="$PROJECT_DIR$/../bbc-recipes-search-engine/search_engine/query_engine.py" />
-        <option value="$PROJECT_DIR$/../bbc-recipes-search-engine/search_engine/corpus_tokenizer.py" />
-        <option value="$PROJECT_DIR$/utils/write_file.py" />
-        <option value="$PROJECT_DIR$/utils/c" />
-        <option value="$USER_HOME$/Google Drive/Universita/Universita_2016-2017(V anno)/I semestre/1)Data Mining/Tutorials/Python_Script/reduce_crime_tsv.py" />
-        <option value="$PROJECT_DIR$/locally_sensitive_hashing/lsh.py" />
-        <option value="$PROJECT_DIR$/utils/log_calculate.py" />
-        <option value="$PROJECT_DIR$/../bbc-recipes-search-engine/search_engine/corpus_builder.py" />
-        <option value="$PROJECT_DIR$/compare/prova.py" />
-        <option value="$PROJECT_DIR$/data/j_results_hash.txt" />
-        <option value="$PROJECT_DIR$/compare/j_results_hash.txt" />
-        <option value="$PROJECT_DIR$/data/j_results.txt" />
-        <option value="$PROJECT_DIR$/result_test/j_results_hash.txt" />
-        <option value="$PROJECT_DIR$/result_test/j_results.txt" />
-        <option value="$PROJECT_DIR$/utils/extract_info.py" />
-        <option value="$PROJECT_DIR$/locally_sensitive_hashing/lsh_improve.py" />
-        <option value="$PROJECT_DIR$/nearest_neighbors/nearest_neighbors.py" />
-        <option value="$PROJECT_DIR$/minhash_signature/minhash_signature.py" />
-        <option value="$PROJECT_DIR$/shingling/shingling.py" />
         <option value="$PROJECT_DIR$/utils/hashFamily.py" />
         <option value="$PROJECT_DIR$/utils/TriangleIndex.py" />
-        <option value="$PROJECT_DIR$/compare/compare_methods.py" />
         <option value="$PROJECT_DIR$/jaccard_implementation/jaccard.py" />
+        <option value="$PROJECT_DIR$/compare/compare_methods.py" />
+        <option value="$USER_HOME$/Google Drive/Insegmaneto 2016-2017/tecnica di programmazione 2016-2017/Programma_biennio/DiarioLezioni/IA/Verifiche/II Verifica/main.py" />
+        <option value="$APPLICATION_HOME_DIR$/bin/Users/andrea/Documents/workspace/untitled/aws_batch_prediction.py" />
+        <option value="$USER_HOME$/Google Drive/Universita/Universita_2016-2017(V anno)/I semestre/1)Data Mining/Tutorials/AWS_MachineLearning/Homework/so_data/aws/amazon_pred.py" />
+        <option value="$APPLICATION_HOME_DIR$/bin/Users/andrea/Documents/workspace/untitled/aws_real_time_prediction.py" />
+        <option value="$PROJECT_DIR$/../streaming-algorithm/twitter/StdOutListener.py" />
+        <option value="$PROJECT_DIR$/../streaming-algorithm/twitter/twitter.py" />
+        <option value="$PROJECT_DIR$/../streaming-algorithm/tutorial_web.py" />
+        <option value="$PROJECT_DIR$/../streaming-algorithm/twitter_stream/tutorial_web.py" />
+        <option value="$PROJECT_DIR$/../streaming-algorithm/twitter/tutorial_web.py" />
+        <option value="$APPLICATION_HOME_DIR$/bin/Users/andrea/Documents/workspace/hw1_ML/hw1.py" />
+        <option value="$USER_HOME$/Google Drive/Universita/Universita_2016-2017(V anno)/I semestre/5)AI&amp;ML/Machine Learning/Homework/Simone/hw1.py" />
+        <option value="$APPLICATION_HOME_DIR$/bin/Users/andrea/Documents/workspace/hw1_ML/hw1_simone.py" />
+        <option value="$APPLICATION_HOME_DIR$/bin/Users/andrea/Documents/workspace/hw1_ML/pca.py" />
+        <option value="$APPLICATION_HOME_DIR$/bin/Users/andrea/Documents/workspace/hw1_ML2/hw1.py" />
+        <option value="$APPLICATION_HOME_DIR$/bin/Users/andrea/Documents/workspace/hw1_ML2/pca.py" />
+        <option value="$APPLICATION_HOME_DIR$/bin/Users/andrea/Documents/workspace/hw2_ML/hw2.py" />
+        <option value="$APPLICATION_HOME_DIR$/bin/Users/andrea/Documents/workspace/hw2_ML/hw2_SVM.py" />
+        <option value="$APPLICATION_HOME_DIR$/bin/Users/andrea/Documents/workspace/hw3_ML/hw3.py" />
+        <option value="$APPLICATION_HOME_DIR$/bin/Users/andrea/Documents/workspace/hw3_ML/hw3_andrea.py" />
+        <option value="$PROJECT_DIR$/../streaming-algorithm/data/stream_statistic.txt" />
+        <option value="$PROJECT_DIR$/../streaming-algorithm/data/twitter.txt" />
+        <option value="$PROJECT_DIR$/../streaming-algorithm/flajolet_martin.py" />
+        <option value="$PROJECT_DIR$/../streaming-algorithm/alon_matias_szegedy.py" />
+        <option value="$PROJECT_DIR$/../streaming-algorithm/distinct_values.py" />
+        <option value="$PROJECT_DIR$/../streaming-algorithm/second_moment.py" />
+        <option value="$PROJECT_DIR$/../streaming-algorithm/utils/print_statistic.py" />
+        <option value="$PROJECT_DIR$/../streaming-algorithm/count_unique_values.py" />
+        <option value="$PROJECT_DIR$/../streaming-algorithm/count_rigth_second_moment.py" />
+        <option value="$PROJECT_DIR$/../streaming-algorithm/ams.py" />
+        <option value="$PROJECT_DIR$/../streaming-algorithm/fm.py" />
+        <option value="$PROJECT_DIR$/../streaming-algorithm/main.py" />
+        <option value="$PROJECT_DIR$/../streaming-algorithm/twitter_stream/stream.py" />
+        <option value="$PROJECT_DIR$/../tweemportance-analyzer/data/people_visited" />
+        <option value="$PROJECT_DIR$/../tweemportance-analyzer/build_graph/build_tweets_graph.py" />
+        <option value="$PROJECT_DIR$/../tweemportance-analyzer/build_tweets_graph/build_tweets_graph.py" />
+        <option value="$APPLICATION_HOME_DIR$/bin/Users/andrea/Documents/workspace/untitled/plot_graph.py" />
+        <option value="$PROJECT_DIR$/../tweemportance-analyzer/ui/plot_graph.py" />
+        <option value="$PROJECT_DIR$/../tweemportance-analyzer/data/replies.txt" />
+        <option value="$PROJECT_DIR$/../tweemportance-analyzer/.gitignore" />
+        <option value="$PROJECT_DIR$/../tweemportance-analyzer/data1/graph/final_graph.tsv" />
+        <option value="$PROJECT_DIR$/../tweemportance-analyzer/data1/graph/hashtags_bitmasks.tsv" />
+        <option value="$PROJECT_DIR$/../tweemportance-analyzer/graph_builder.py" />
+        <option value="$PROJECT_DIR$/../tweemportance-analyzer/utils/graph_jaccard_similarity.py" />
+        <option value="$PROJECT_DIR$/../tweemportance-analyzer/independent_cascade_analyzer/graph_analyzer.py" />
+        <option value="$PROJECT_DIR$/../tweemportance-analyzer/ui/ui_basic.py" />
+        <option value="$PROJECT_DIR$/../tweemportance-analyzer/twitter_data_retrieve/twitter_data_retriever.py" />
+        <option value="$PROJECT_DIR$/../tweemportance-analyzer/data/people_visited.txt" />
       </list>
     </option>
   </component>
@@ -208,15 +194,27 @@
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyPep8Inspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
     <ConfirmationsSetting value="2" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -233,110 +231,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shingling" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="minhash_signature" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="locally_sensitive_hashing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jaccard_implementation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nearest-neighbor-search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="compare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -351,169 +246,171 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nearest-neighbor-search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nearest-neighbor-search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tweemportance-analyzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nearest-neighbor-search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tweemportance-analyzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nearest-neighbor-search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tweemportance-analyzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Google Drive/Universita/Universita_2016-2017(V anno)/I semestre/1)Data Mining/Tutorials/Python_Script" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tweemportance-analyzer" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/result_test" />
-      <recent name="$PROJECT_DIR$/nearest_neighbors" />
+      <recent name="$PROJECT_DIR$/../tweemportance-analyzer/data1/people1" />
+      <recent name="$PROJECT_DIR$/../tweemportance-analyzer/data1" />
+      <recent name="$PROJECT_DIR$/../tweemportance-analyzer/data" />
+      <recent name="$PROJECT_DIR$/../streaming-algorithm/twitter_stream" />
+      <recent name="$PROJECT_DIR$/../streaming-algorithm" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$/locally_sensitive_hashing" />
-      <recent name="$USER_HOME$/Google Drive/Universita/Universita_2016-2017(V anno)/I semestre/1)Data Mining/Tutorials/Python_Script" />
-      <recent name="$PROJECT_DIR$/utils" />
-      <recent name="$PROJECT_DIR$/nearest_neighbors" />
+      <recent name="$PROJECT_DIR$/../tweemportance-analyzer" />
+      <recent name="$APPLICATION_HOME_DIR$/bin/Users/andrea/Documents/workspace/untitled" />
+      <recent name="$PROJECT_DIR$/../tweemportance-analyzer/independent_cascade_analyzer" />
+      <recent name="$PROJECT_DIR$/../tweemportance-analyzer/twitter_data_retrieve" />
+      <recent name="$PROJECT_DIR$/../tweemportance-analyzer/data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.compare_methods">
-    <configuration default="false" name="compare_methods" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.twitter_data_retriever">
+    <configuration default="false" name="build_tweets_graph" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/compare" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../tweemportance-analyzer/build_tweets_graph" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="nearest-neighbor-search" />
+      <module name="tweemportance-analyzer" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/compare/compare_methods.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../tweemportance-analyzer/build_tweets_graph/build_tweets_graph.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="shingling" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="twitter_data_retriever" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/shingling" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../tweemportance-analyzer/twitter_data_retrieve" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="nearest-neighbor-search" />
+      <module name="tweemportance-analyzer" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shingling/shingling.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../tweemportance-analyzer/twitter_data_retrieve/twitter_data_retriever.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="hashFamily" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="ui_basic" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../tweemportance-analyzer/ui" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="nearest-neighbor-search" />
+      <module name="tweemportance-analyzer" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/hashFamily.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../tweemportance-analyzer/ui/ui_basic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="prova" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="graph_builder" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/compare" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../tweemportance-analyzer" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="nearest-neighbor-search" />
+      <module name="tweemportance-analyzer" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/compare/prova.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../tweemportance-analyzer/graph_builder.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="minhash_signature" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="graph_analyzer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/minhash_signature" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../tweemportance-analyzer/independent_cascade_analyzer" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="nearest-neighbor-search" />
+      <module name="tweemportance-analyzer" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/minhash_signature/minhash_signature.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../tweemportance-analyzer/independent_cascade_analyzer/graph_analyzer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="nearest-neighbor-search" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="nearest-neighbor-search" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="nearest-neighbor-search" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -545,22 +442,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <module name="nearest-neighbor-search" />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -673,20 +554,39 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.compare_methods" />
-      <item index="1" class="java.lang.String" itemvalue="Python.shingling" />
-      <item index="2" class="java.lang.String" itemvalue="Python.hashFamily" />
-      <item index="3" class="java.lang.String" itemvalue="Python.prova" />
-      <item index="4" class="java.lang.String" itemvalue="Python.minhash_signature" />
+    <configuration default="false" name="plot_graph" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../tweemportance-analyzer/ui" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tweemportance-analyzer" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../tweemportance-analyzer/ui/plot_graph.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Python.plot_graph" />
+      <item index="1" class="java.lang.String" itemvalue="Python.build_tweets_graph" />
+      <item index="2" class="java.lang.String" itemvalue="Python.twitter_data_retriever" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ui_basic" />
+      <item index="4" class="java.lang.String" itemvalue="Python.graph_builder" />
+      <item index="5" class="java.lang.String" itemvalue="Python.graph_analyzer" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.compare_methods" />
-        <item index="1" class="java.lang.String" itemvalue="Python.minhash_signature" />
-        <item index="2" class="java.lang.String" itemvalue="Python.prova" />
-        <item index="3" class="java.lang.String" itemvalue="Python.hashFamily" />
-        <item index="4" class="java.lang.String" itemvalue="Python.shingling" />
+        <item index="0" class="java.lang.String" itemvalue="Python.twitter_data_retriever" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ui_basic" />
+        <item index="2" class="java.lang.String" itemvalue="Python.graph_analyzer" />
+        <item index="3" class="java.lang.String" itemvalue="Python.graph_builder" />
+        <item index="4" class="java.lang.String" itemvalue="Python.build_tweets_graph" />
       </list>
     </recent_temporary>
   </component>
@@ -701,6 +601,14 @@
       <option name="presentableId" value="Default" />
       <updated>1480063947335</updated>
     </task>
+    <task id="LOCAL-00001" summary="quasi finito">
+      <created>1486834396322</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1486834396322</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -714,46 +622,48 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2825465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19802678" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6012048" sideWeight="0.52575105" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6" sideWeight="0.5369979" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6698795" sideWeight="0.47424892" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46385542" sideWeight="0.46300212" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39643347" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3939759" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253012" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4253012" sideWeight="0.534179" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6694021" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6698795" sideWeight="0.465821" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22569445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20084566" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253012" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282532" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3985932" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39518073" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -766,6 +676,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="quasi finito" />
+    <option name="LAST_COMMIT_MESSAGE" value="quasi finito" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -780,268 +694,310 @@
           <line>3</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$APPLICATION_HOME_DIR$/bin/Users/andrea/Documents/workspace/hw2_ML/hw2_SVM.py</url>
+          <line>88</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../tweemportance-analyzer/independent_cascade_analyzer/graph_analyzer.py</url>
+          <line>269</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../tweemportance-analyzer/independent_cascade_analyzer/graph_analyzer.py</url>
+          <line>141</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../tweemportance-analyzer/independent_cascade_analyzer/graph_analyzer.py</url>
+          <line>726</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../tweemportance-analyzer/ui/ui_basic.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../tweemportance-analyzer/ui/ui_basic.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../tweemportance-analyzer/independent_cascade_analyzer/graph_analyzer.py</url>
+          <line>215</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../tweemportance-analyzer/ui/ui_basic.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="46" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../bbc-recipes-search-engine/utils/unicode_ascii_decoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-488">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/articles_10000.train" />
-    <entry file="file://$PROJECT_DIR$/../bbc-recipes-search-engine/utils/data_structures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="188" column="6" selection-start-line="188" selection-start-column="6" selection-end-line="188" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bbc-recipes-search-engine/search_engine/query_engine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/recipes_old.json" />
-    <entry file="file://$PROJECT_DIR$/data/JSim.txt" />
-    <entry file="file://$PROJECT_DIR$/data/estJSim.txt" />
-    <entry file="file://$USER_HOME$/Google Drive/Universita/Universita_2016-2017(V anno)/I semestre/1)Data Mining/Tutorials/Python_Script/Icon&#13;">
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/828963281431883778" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/828591696489353220" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/827545956186996736" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/827296389759635456" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/828608484564410368" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/tweets.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Google Drive/Universita/Universita_2016-2017(V anno)/I semestre/1)Data Mining/Tutorials/Python_Script/test.py">
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/1983Marghe/830429383580073984" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/831142158539321345">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Google Drive/Universita/Universita_2016-2017(V anno)/I semestre/1)Data Mining/Tutorials/Python_Script/add_empty_value.py">
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/830729515857018880">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Google Drive/Universita/Universita_2016-2017(V anno)/I semestre/1)Data Mining/Tutorials/Python_Script/little_crime.tsv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/830728685338685440">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/c" />
-    <entry file="file://$USER_HOME$/Google Drive/Universita/Universita_2016-2017(V anno)/I semestre/1)Data Mining/Tutorials/Python_Script/reduce_crime_tsv.py">
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/827296792492523520" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/827293939564699648" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/827293595367510016" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/831205983628177408">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/replies.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/827287016257695744" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/827287197208285184" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/827290297889615876" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/827291154341322753" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/827293431521120256" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/827293797486833664" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/830737775527915521">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/830730577091424256">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/830727977029758977">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/830727650893246465">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/830435098625458176">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1553">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/829022439954853888" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/827848471470338050" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/827589489610596355" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/827294485554069506" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people/matteosalvinimi/827293890336157696" />
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/independent_cascade_analyzer/test_graph_analyzer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-833">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data1/people1/matteosalvinimi/827287016257695744">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/BitVector/BitVector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="2423" column="0" lean-forward="false" selection-start-line="2423" selection-start-column="0" selection-end-line="2423" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data1/people1/matteosalvinimi/828271859758161921">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data1/people1/matteosalvinimi/828653579229659136">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data1/people1/matteosalvinimi/829019549689401344">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data1/people1/matteosalvinimi/827926503354679297">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data1/people1/matteosalvinimi/829012452075450369">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data1/graph/name_to_index_graph_translation.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data1/graph/jaccard_all_pairs_similarity.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/build_tweets_graph/build_tweets_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compare/minhash.py" />
-    <entry file="file://$PROJECT_DIR$/../MinHash/runMinHashExample.py">
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data1/graph/final_graph.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="62" selection-end-column="25" />
+        <state relative-caret-position="-20331">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../bbc-recipes-search-engine/search_engine/corpus_tokenizer.py">
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data1/graph/hashtags_bitmasks.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="191" column="8" selection-start-line="191" selection-start-column="8" selection-end-line="191" selection-end-column="8" />
+        <state relative-caret-position="45">
+          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/html5lib/html5parser.py">
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/graph_builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/html5lib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bbc-recipes-search-engine/data/recipes.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/recipes.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/bs4/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1644">
-          <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/genericpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result_test/ris-05-11-16.rtf" />
-    <entry file="file://$PROJECT_DIR$/result_test/ris-06-11-16.rtf" />
-    <entry file="file://$PROJECT_DIR$/result_test/result_4-11-16.rtf" />
-    <entry file="file://$PROJECT_DIR$/../bbc-recipes-search-engine/crawler/bbc_scraper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="171" column="14" selection-start-line="170" selection-start-column="3" selection-end-line="171" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nearest_neighbors/nearest_neighbors_multith.py" />
-    <entry file="file://$PROJECT_DIR$/nearest_neighbors/nearest_neighbors_multith_thread_pool.py" />
-    <entry file="file://$PROJECT_DIR$/../bbc-recipes-search-engine/search_engine/corpus_builder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/locally_sensitive_hashing/lsh.py" />
-    <entry file="file://$PROJECT_DIR$/../bbc-recipes-search-engine/utils/utility_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="68" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bbc-recipes-search-engine/crawler/download_pages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="78" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compare/prova.py" />
-    <entry file="file://$PROJECT_DIR$/compare/j_results_hash.txt" />
-    <entry file="file://$PROJECT_DIR$/data/j_results.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/j_results_hash.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/log_calculate.py" />
-    <entry file="file://$PROJECT_DIR$/result_test/j_results.txt" />
-    <entry file="file://$PROJECT_DIR$/result_test/j_results_higher.txt" />
-    <entry file="file://$PROJECT_DIR$/result_test/j_results_hash.txt" />
-    <entry file="file://$PROJECT_DIR$/locally_sensitive_hashing/lsh_improve.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
+        <state relative-caret-position="262">
+          <caret line="166" column="52" lean-forward="false" selection-start-line="166" selection-start-column="52" selection-end-line="166" selection-end-column="52" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#3059#3730#0" expanded="false" />
+            <element signature="e#3809#3975#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/minhash_signature/minhash_signature.py">
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/utils/graph_jaccard_similarity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="77" column="21" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="21" />
+        <state relative-caret-position="451">
+          <caret line="106" column="18" lean-forward="false" selection-start-line="106" selection-start-column="11" selection-end-line="106" selection-end-column="18" />
           <folding>
-            <element signature="e#206#219#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shingling/shingling.py">
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/independent_cascade_analyzer/graph_analyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/extract_info.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/TriangleIndex.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/unicode_ascii_decoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/write_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jaccard_implementation/jaccard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        <state relative-caret-position="189">
+          <caret line="813" column="10" lean-forward="false" selection-start-line="813" selection-start-column="10" selection-end-line="813" selection-end-column="10" />
           <folding>
-            <element signature="e#306#317#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/hashFamily.py">
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/ui/ui_basic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="667">
+          <caret line="153" column="38" lean-forward="false" selection-start-line="153" selection-start-column="38" selection-end-line="153" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compare/compare_methods.py">
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/twitter_data_retrieve/twitter_data_retriever.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        <state relative-caret-position="252">
+          <caret line="326" column="4" lean-forward="false" selection-start-line="326" selection-start-column="4" selection-end-line="326" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#1880#4038#0" expanded="false" />
+            <element signature="e#5663#6407#0" expanded="false" />
+            <element signature="e#6657#7612#0" expanded="false" />
+            <element signature="e#12159#12448#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tweemportance-analyzer/data/people_visited.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10218">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding />
         </state>
       </provider>
